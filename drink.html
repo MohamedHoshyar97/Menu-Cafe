@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Bites | Premium Coffee Selection</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap">
+    <style>
+        :root {
+            --dark: #2A2826;
+            --primary: #A67C52;
+            --secondary: #BF9D7D;
+            --light: #F4F0EB;
+            --accent: #8C6A4D;
+            --text: #3E3B39;
+            --text-light: #7A766F;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #00ddff, #b06abc, #5ed4da, #c952af);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                        url('bgdrink1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+        
+        .hero2 {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                        url('bgdrink2.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+            margin-top: 50px;
+        }
+        
+        .hero-content h1, .hero2-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+        
+        .hero-content p, .hero2-content p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        
+        .btn-menu {
+            background-color: rgb(0, 225, 255);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        
+        .btn-menu:hover {
+            background-color:  #c952af;
+            transform: translateY(-2px);
+        }
+        
+        /* Menu Grid */
+        .menu-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 15px;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 25px;
+            color:white;
+        }
+        
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        
+        .menu-card {
+            background: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow:3px 5px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        }
+        
+        .menu-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .card-image-container {
+            width: 100%;
+            height: 0;
+            padding-bottom: 70%;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        
+        .card-content {
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+        
+        .card-category {
+            display: inline-block;
+            font-size: 0.9rem;
+            font-weight: 600;
+            padding: 5px 10px;
+            border-radius: 20px;
+            color: var(--primary);
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .card-description {
+            color: var(--text-light);
+            font-size: 0.8rem;
+            text-align: center;
+            padding: 0 8px;
+            margin-bottom: 5px;
+            line-height: 1.4;
+        }
+        
+        .card-price {
+            font-weight: 1000;
+            color: var(--primary);
+            margin-top: 5px;
+        }
+
+        /* Coffee Types Section */
+        .coffee-types {
+            background-color: white;
+            padding: 40px 15px;
+            margin-top: 40px;
+        }
+        
+        .coffee-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        
+        .coffee-text h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--dark);
+            margin-bottom: 1.2rem;
+            text-align: center;
+        }
+        
+        .coffee-text p {
+            color: var(--text-light);
+            margin-bottom: 1.2rem;
+            line-height: 1.6;
+            text-align: center;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 0.95rem;
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 30px 15px 15px;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+        
+        .footer h3 {
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 12px;
+            color: var(--secondary);
+            font-size: 1.3rem;
+        }
+        
+        .footer p {
+            margin: 4px 0;
+            color: var(--light);
+            font-size: 0.9rem;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.85rem;
+        }
+        
+        /* Responsive */
+        @media (min-width: 480px) {
+            .menu-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .hero-content h1, .hero2-content h1 {
+                font-size: 3rem;
+            }
+            
+            .hero-content p, .hero2-content p {
+                font-size: 1.1rem;
+            }
+            
+            .btn-menu {
+                padding: 12px 30px;
+                font-size: 1rem;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .hero-content h1, .hero2-content h1 {
+                font-size: 3.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .menu-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+            
+            .card-category {
+                font-size: 1rem;
+            }
+            
+            .card-description {
+                font-size: 0.85rem;
+            }
+            
+            .card-price {
+                font-size: 1rem;
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .menu-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            
+            .hero-content h1, .hero2-content h1 {
+                font-size: 4rem;
+            }
+            
+            .menu-container {
+                padding: 0 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Artisan Drink Selection</h1>
+        <p>Discover 16 unique beverages crafted by our expert mixologists</p>
+        <a href="#drink-menu" class="btn-menu">Explore Our Drinks</a>
+    </div>
+</section>
+
+<!-- Drink Menu Grid -->
+<section id="drink-menu" class="menu-container">
+    <h2 class="section-title">Our Drink Collection</h2>
+    <div class="menu-grid">
+        <!-- Classic Tonic -->
+        <div class="menu-card">
+            <div class="card-image-container">
+                <img src="tonic.jpg" class="card-image" alt="Classic Tonic">
+            </div>
+            <div class="card-content">
+                <span class="card-category">Classic Tonic</span>
+                <p class="card-description">Bold and aromatic refreshment</p>
+                <p class="card-price">$3.50</p>
+            </div>
+        </div>
+
+        <!-- redbul -->
+        <div class="menu-card">
+            <div class="card-image-container">
+                <img src="redbul.jpg" class="card-image" alt="redbull">
+            </div>
+            <div class="card-content">
+                <span class="card-category">Red Bull</span>
+                <p class="card-description">Energy Drink</p>
+                <p class="card-price">$4.50</p>
+            </div>
+        </div>
+
+        <!-- Cream Fizz -->
+        <div class="menu-card">
+            <div class="card-image-container">
+                <img src="fizz.webp" class="card-image" alt="Cream Fizz">
+            </div>
+            <div class="card-content">
+                <span class="card-category">Cream Fizz</span>
+                <p class="card-description">A creamy delight with a fizzy twist</p>
+                <p class="card-price">$4.75</p>
+            </div>
+        </div>
+
+        <!-- Velvet Chill -->
+        <div class="menu-card">
+            <div class="card-image-container">
+                <img src="velvet.jpg" class="card-image" alt="Velvet Chill">
+            </div>
+            <div class="card-content">
+                <span class="card-category">Velvet Chill</span>
+                <p class="card-description">Smooth, cold, and irresistibly soft</p>
+                <p class="card-price">$4.50</p>
+            </div>
+        </div>
+
+        <!-- White Mist -->
+        <div class="menu-card">
+            <div class="card-image-container">
+                <img src="mist.jpg" class="card-image" alt="White Mist">
+            </div>
+            <div class="card-content">
+                <span class="card-category">White Mist</span>
+                <p class="card-description">Light and airy with subtle sweetness</p>
+                <p class="card-price">$4.75</p>
+            </div>
+        </div>
+
+        <!-- Choco Bliss -->
+        <div class="menu-card">
+            <div class="card-image-container">
+                <img src="bliss.jpg" class="card-image" alt="Choco Bliss">
+            </div>
+            <div class="card-content">
+                <span class="card-category">Choco Bliss</span>
+                <p class="card-description">A rich blend of chocolate and cream</p>
+                <p class="card-price">$5.00</p>
+            </div>
+        </div>
+
+      <!-- Citrus Breeze -->
+<div class="menu-card">
+    <div class="card-image-container">
+        <img src="breeze.jpg" class="card-image" alt="Citrus Breeze">
+    </div>
+    <div class="card-content">
+        <span class="card-category">Citrus Breeze</span>
+        <p class="card-description">Clean, crisp, and citrus-infused delight</p>
+        <p class="card-price">$3.75</p>
+    </div>
+</div>
+
+<!-- pepsi -->
+<div class="menu-card">
+    <div class="card-image-container">
+        <img src="pepsi.jpg" class="card-image" alt="pepsi">
+    </div>
+    <div class="card-content">
+        <span class="card-category">Pepsi</span>
+        <p class="card-description">Energy</p>
+        <p class="card-price">$4.00</p>
+    </div>
+</div>
+
+<!-- lemon -->
+<div class="menu-card">
+    <div class="card-image-container">
+        <img src="lemon.webp" class="card-image" alt="lemon">
+    </div>
+    <div class="card-content">
+        <span class="card-category">Lemon Water</span>
+        <p class="card-description">Healthy Water</p>
+        <p class="card-price">$4.25</p>
+    </div>
+</div>
+
+<!-- Berry Chill -->
+<div class="menu-card">
+    <div class="card-image-container">
+        <img src="chill.webp" class="card-image" alt="Berry Chill">
+    </div>
+    <div class="card-content">
+        <span class="card-category">Berry Chill</span>
+        <p class="card-description">Icy mix of strawberries and blueberries for a cool burst</p>
+        <p class="card-price">$4.50</p>
+    </div>
+</div>
+
+<!-- Rose Bloom -->
+<div class="menu-card">
+    <div class="card-image-container">
+        <img src="rose.jpg" class="card-image" alt="Rose Bloom">
+    </div>
+    <div class="card-content">
+        <span class="card-category">Rose Bloom</span>
+        <p class="card-description">Floral rose water blended with lychee and crushed ice</p>
+        <p class="card-price">$4.75</p>
+    </div>
+</div>
+
+<!-- Tropical Cream -->
+<div class="menu-card">
+    <div class="card-image-container">
+        <img src="topical.jpg" class="card-image" alt="Tropical Cream">
+    </div>
+    <div class="card-content">
+        <span class="card-category">Tropical Cream</span>
+        <p class="card-description">Pineapple and mango swirled with creamy coconut</p>
+        <p class="card-price">$5.50</p>
+    </div>
+</div>
+
+<!-- Spiced Peach -->
+<div class="menu-card">
+    <div class="card-image-container">
+        <img src="spic.webp" class="card-image" alt="Spiced Peach">
+    </div>
+    <div class="card-content">
+        <span class="card-category">Spiced Peach</span>
+        <p class="card-description">Chilled peach tea with a subtle spice twist</p>
+        <p class="card-price">$4.25</p>
+    </div>
+</div>
+
+<!-- Coconut Bliss -->
+<div class="menu-card">
+    <div class="card-image-container">
+        <img src="connn.webp" class="card-image" alt="Coconut Bliss">
+    </div>
+    <div class="card-content">
+        <span class="card-category">Coconut Bliss</span>
+        <p class="card-description">Fresh coconut water with lime and crushed mint</p>
+        <p class="card-price">$4.75</p>
+    </div>
+</div>
+
+<!-- Citrus Fusion -->
+<div class="menu-card">
+    <div class="card-image-container">
+        <img src="cit.png" class="card-image" alt="Citrus Fusion">
+    </div>
+    <div class="card-content">
+        <span class="card-category">Citrus Fusion</span>
+        <p class="card-description">Zesty orange, lemon, and grapefruit over ice</p>
+        <p class="card-price">$5.00</p>
+    </div>
+</div>
+
+<!-- apple -->
+<div class="menu-card">
+    <div class="card-image-container">
+        <img src="apple.webp" class="card-image" alt="apple">
+    </div>
+    <div class="card-content">
+        <span class="card-category">Green Apple</span>
+        <p class="card-description">Green Apple drink Water</p>
+        <p class="card-price">$4.50</p>
+    </div>
+</div>
+    </div></section>
+
+
+
+<!-- Second Hero Section -->
+<section class="hero2">
+    <div class="hero2-content">
+        <h1>Handcrafted Perfection</h1>
+        <p>Each drink is carefully prepared by our skilled team using premium ingredients</p>
+    </div>
+</section>
+
+<!-- Drink Philosophy Section -->
+<section class="coffee-types">
+    <div class="coffee-container">
+        <div class="coffee-text">
+            <h2>Our Drink Philosophy</h2>
+            <p>We curate premium ingredients from around the globe to bring you a wide variety of signature drinks. Each blend is crafted to highlight unique flavors and deliver a memorable experience in every glass.</p>
+            <p>Our team is trained to perfection in both timeless classics and innovative modern mixes to guarantee top-tier quality in every pour.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-hours">
+            <h3>Opening Hours</h3>
+            <p>Monday - Friday: 7am - 7pm</p>
+            <p>Saturday - Sunday: 8am - 6pm</p>
+        </div>
+        <div class="footer-contact">
+            <h3>Visit Us</h3>
+            <p>123 Beverage Boulevard</p>
+            <p>Mixville, MX 12345</p>
+            <p>(123) 456-7890</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 Brew & Bites. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
