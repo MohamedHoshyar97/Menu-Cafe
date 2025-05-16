@@ -90,6 +90,9 @@
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
             transition: transform 0.3s ease;
+            aspect-ratio: 1/1; /* Makes cards square */
+            display: flex;
+            flex-direction: column;
         }
         
         .menu-card:hover {
@@ -99,19 +102,24 @@
         
         .card-image {
             width: 100%;
-            height: 160px;
+            height: 70%; /* Adjust image height to make more square */
             object-fit: cover;
         }
         
         .card-content {
             padding: 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
         }
         
         .card-category {
             display: inline-block;
-            font-size: 0.7rem;
+            font-size: 1.5rem; /* Slightly larger font */
             font-weight: 600;
-            padding: 4px 10px;
+            padding: 6px 12px;
             border-radius: 20px;
             background-color: var(--light);
             color: var(--primary);
@@ -174,6 +182,39 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
         
+        /* Footer */
+        .footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 40px 20px 20px;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        
+        .footer h3 {
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 15px;
+            color: var(--secondary);
+        }
+        
+        .footer p {
+            margin: 5px 0;
+            color: var(--light);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
         /* Responsive */
         @media (min-width: 768px) {
             .hero-content h1 {
@@ -188,6 +229,10 @@
                 grid-template-columns: 1fr 1fr;
                 align-items: center;
             }
+            
+            .footer-container {
+                grid-template-columns: 1fr 1fr;
+            }
         }
         
         @media (min-width: 1024px) {
@@ -199,45 +244,6 @@
                 font-size: 4.5rem;
             }
         }
-
-
-        .footer {
-        background-color: var(--dark);
-        color: white;
-        padding: 40px 20px 20px;
-    }
-    
-    .footer-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-    
-    .footer h3 {
-        font-family: 'Playfair Display', serif;
-        margin-bottom: 15px;
-        color: var(--secondary);
-    }
-    
-    .footer p {
-        margin: 5px 0;
-        color: var(--light);
-    }
-    
-    .footer-bottom {
-        text-align: center;
-        margin-top: 40px;
-        padding-top: 20px;
-        border-top: 1px solid rgba(255,255,255,0.1);
-    }
-    
-    @media (min-width: 768px) {
-        .footer-container {
-            grid-template-columns: 1fr 1fr;
-        }
-    }
     </style>
 </head>
 <body>
@@ -258,19 +264,13 @@
                 <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" class="card-image" alt="Espresso">
                 <div class="card-content">
                     <span class="card-category">Coffee</span>
-                    <h3 class="card-title">Espresso</h3>
-                    <p class="card-desc">Intense and aromatic single-origin coffee shot</p>
-                    <div class="card-price">$3.50</div>
                 </div>
             </div>
             
             <div class="menu-card">
                 <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" class="card-image" alt="Latte">
                 <div class="card-content">
-                    <span class="card-category">Coffee</span>
-                    <h3 class="card-title">Latte</h3>
-                    <p class="card-desc">Smooth espresso with velvety steamed milk</p>
-                    <div class="card-price">$4.50</div>
+                    <span class="card-category">Drinks</span>
                 </div>
             </div>
             
@@ -279,19 +279,13 @@
                 <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" class="card-image" alt="Avocado Toast">
                 <div class="card-content">
                     <span class="card-category">Food</span>
-                    <h3 class="card-title">Avocado Toast</h3>
-                    <p class="card-desc">Sourdough with smashed avocado, chili flakes, and microgreens</p>
-                    <div class="card-price">$8.50</div>
                 </div>
             </div>
             
             <div class="menu-card">
                 <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" class="card-image" alt="Sandwich">
                 <div class="card-content">
-                    <span class="card-category">Food</span>
-                    <h3 class="card-title">Turkey Club</h3>
-                    <p class="card-desc">Roasted turkey, bacon, avocado, and herb mayo</p>
-                    <div class="card-price">$10.00</div>
+                    <span class="card-category">Milk Shake</span>
                 </div>
             </div>
             
@@ -300,23 +294,15 @@
                 <img src="https://images.unsplash.com/photo-1562440499-64c9a111f713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" class="card-image" alt="Croissant">
                 <div class="card-content">
                     <span class="card-category">Sweet</span>
-                    <h3 class="card-title">Butter Croissant</h3>
-                    <p class="card-desc">Flaky, buttery pastry made fresh daily</p>
-                    <div class="card-price">$3.50</div>
                 </div>
             </div>
             
             <div class="menu-card">
                 <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" class="card-image" alt="Cheesecake">
                 <div class="card-content">
-                    <span class="card-category">Sweet</span>
-                    <h3 class="card-title">Cheesecake</h3>
-                    <p class="card-desc">New York style with seasonal berry compote</p>
-                    <div class="card-price">$6.00</div>
+                    <span class="card-category">Cake</span>
                 </div>
             </div>
-            
-            <!-- More items would continue here... -->
         </div>
     </section>
 
@@ -335,30 +321,23 @@
         </div>
     </section>
 
-
-
-    <!-- Add this right before the closing </body> tag -->
-
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-hours">
-            <h3>Opening Hours</h3>
-            <p>Monday - Friday: 7am - 7pm</p>
-            <p>Saturday - Sunday: 8am - 6pm</p>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-hours">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday: 7am - 7pm</p>
+                <p>Saturday - Sunday: 8am - 6pm</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Visit Us</h3>
+                <p>123 Coffee Street</p>
+                <p>Brewville, BV 12345</p>
+                <p>(123) 456-7890</p>
+            </div>
         </div>
-        <div class="footer-contact">
-            <h3>Visit Us</h3>
-            <p>123 Coffee Street</p>
-            <p>Brewville, BV 12345</p>
-            <p>(123) 456-7890</p>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Brew & Bites. All rights reserved.</p>
         </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2023 Brew & Bites. All rights reserved.</p>
-    </div>
-</footer>
-
-
-
+    </footer>
 </body>
 </html>
