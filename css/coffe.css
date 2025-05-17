@@ -351,9 +351,9 @@
     .cart-icon {
        
         border-radius: 30px;
-        right: 10px;
+        right: 25px;
         position: fixed;
-        bottom: 20px;
+        bottom: 30px;
         background: #ffffff;
         padding: 15px;
         cursor: pointer;
