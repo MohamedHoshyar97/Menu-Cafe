@@ -350,9 +350,9 @@
             /* Cart Icon Styles */
     .cart-icon {
        border-radius: 30px;
-        right: 25px;
+        right: 20px;
         position: fixed;
-        bottom: 30px;
+        bottom: 25px;
         background: #ffffff;
         padding: 15px;
         cursor: pointer;
