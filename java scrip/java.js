@@ -1,5 +1,4 @@
-// cart.js - Include this in all pages
-// Cart functionality
+// cart.js - Complete implementation
 function loadCartFromLocalStorage() {
     const storedCart = localStorage.getItem('shoppingCart');
     return storedCart ? JSON.parse(storedCart) : [];
@@ -12,20 +11,29 @@ function saveCartToLocalStorage(cart) {
 let cart = loadCartFromLocalStorage();
 let cartOpen = false;
 
-// Cross-tab synchronization
-window.addEventListener('storage', function(e) {
-    if (e.key === 'shoppingCart') {
-        cart = loadCartFromLocalStorage();
-        updateCartDisplay();
-        updateMenuCardQuantities();
-    }
-});
+// Cart element creation
+function createCartElements() {
+    const cartHTML = `
+        <div class="cart-sidebar">
+            <h2>Your Cart</h2>
+            <div class="cart-items"></div>
+            <div class="cart-total">
+                Total: <span id="cart-total-price">0 IQD</span>
+            </div>
+            <button class="close-cart" onclick="toggleCart()">Close</button>
+        </div>
+        <div class="cart-icon" onclick="toggleCart()">
+            🛒 <span class="cart-count">0</span>
+        </div>
+    `;
+    document.body.insertAdjacentHTML('beforeend', cartHTML);
+}
 
-document.addEventListener('DOMContentLoaded', function() {
-    initializePage();
-});
-
+// Initialization
 function initializePage() {
+    if (!document.querySelector('.cart-sidebar')) {
+        createCartElements();
+    }
     updateCartDisplay();
     setupMenuCards();
 }
@@ -43,7 +51,6 @@ function setupMenuCards() {
         const name = card.querySelector('.card-category').textContent;
         const image = card.querySelector('.card-image')?.src || '';
 
-        // Initialize from cart
         const cartItem = cart.find(item => item.name === name);
         let quantity = cartItem?.quantity || 0;
         quantityElement.textContent = quantity;
@@ -66,12 +73,14 @@ function setupMenuCards() {
     });
 }
 
+// Cart functionality
 function toggleCart() {
     const cartSidebar = document.querySelector('.cart-sidebar');
-    if (cartSidebar) {
-        cartSidebar.classList.toggle('active');
-        updateCartDisplay();
+    if (!cartSidebar) {
+        createCartElements();
     }
+    document.querySelector('.cart-sidebar').classList.toggle('active');
+    updateCartDisplay();
 }
 
 function updateCartDisplay() {
@@ -108,7 +117,6 @@ function updateCartDisplay() {
     cartTotalPriceElement.textContent = `${totalPrice.toLocaleString()} IQD`;
     saveCartToLocalStorage(cart);
 
-    // Manage Remove All button
     const existingRemoveAll = document.querySelector('#remove-all-items');
     if (cart.length > 0 && !existingRemoveAll) {
         const removeAllBtn = document.createElement('button');
@@ -136,6 +144,7 @@ function updateCart(name, price, image, quantity) {
     
     saveCartToLocalStorage(cart);
     updateCartDisplay();
+    updateMenuCardQuantities();
 }
 
 function removeCartItem(name) {
@@ -167,3 +176,16 @@ function updateMenuCardQuantities() {
         }
     });
 }
+
+// Event listeners
+window.addEventListener('storage', function(e) {
+    if (e.key === 'shoppingCart') {
+        cart = loadCartFromLocalStorage();
+        updateCartDisplay();
+        updateMenuCardQuantities();
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    initializePage();
+});
