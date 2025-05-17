@@ -11,18 +11,17 @@
         
         body {
             font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #137e8e, #00f2ff, #F8F8E1, #07b7c1);
+            background: linear-gradient(135deg, #FE5D26, #f6a12c, #FE5D26, #FE5D26);
             color: var(--text);
             margin: 0;
             padding: 0;
             line-height: 1.6;
-             overflow-x: hidden;
         }
         
         /* Hero Section */
         .hero {
             background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                        url('../pictures/bgdrink1.jpg');
+                        url('../pictures/foodbg.jpeg');
             background-size: cover;
             background-position: center;
             height: 60vh;
@@ -36,7 +35,7 @@
         
         .hero2 {
             background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                        url('../pictures/bgdrink2.jpg');
+                        url('../pictures/bgf2.jpg');
             background-size: cover;
             background-position: center;
             height: 50vh;
@@ -49,7 +48,7 @@
             margin-top: 50px;
         }
         
-        .hero-content h1, .hero2-content h1 {
+         .hero-content h1, .hero2-content h1 {
             font-family: 'Playfair Display', serif;
             font-size: 2.5rem;
             margin-bottom: 1rem;
@@ -64,7 +63,7 @@
         }
         
         .btn-menu {
-            background-color: rgb(0, 225, 255);
+            background-color: #FE5D26;
             color: white;
             padding: 10px 25px;
             border-radius: 30px;
@@ -152,7 +151,7 @@
             font-weight: 600;
             padding: 5px 10px;
             border-radius: 20px;
-            color: #8ACCD5;
+            color: #FE5D26;
             margin-bottom: 6px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -169,7 +168,7 @@
         
         .card-price {
             font-weight: 1000;
-           color: #8ACCD5;
+           color: #FE5D26;
             margin-top: 5px;
         }
 
@@ -182,7 +181,7 @@
         }
 
         .quantity-btn {
-            background: #8ACCD5;
+            background: #ff8800;
             color: white;
             border: none;
             border-radius: 50%;
@@ -197,7 +196,7 @@
         }
 
         .quantity-btn:hover {
-            background:#2bbdd0;
+            background:#be5c00;
         }
 
         .quantity {
@@ -210,10 +209,9 @@
         .total-price {
             margin-top: 8px;
             font-weight: bold;
-            color: #8ACCD5;
+            color: #ff8800;
             font-size: 0.9rem;
         }
-
 
 
 
@@ -352,7 +350,9 @@
             }
         }
 
-        /* Cart Icon Styles */
+
+
+    /* Cart Icon Styles */
     .cart-icon {
        
         border-radius: 30px;
@@ -483,3 +483,4 @@
     .checkout-btn:hover {
         background: #2bbdd0;
     }
+
