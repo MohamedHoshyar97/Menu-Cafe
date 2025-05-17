@@ -179,6 +179,50 @@
             margin-top: 5px;
         }
 
+         /* Quantity Selector Styles */
+        .quantity-selector {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            justify-content: center;
+        }
+
+        .quantity-btn {
+            background: #8ACCD5;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s;
+        }
+
+        .quantity-btn:hover {
+            background:#2bbdd0;
+        }
+
+        .quantity {
+            margin: 0 10px;
+            min-width: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .total-price {
+            margin-top: 8px;
+            font-weight: bold;
+            color: #8ACCD5;
+            font-size: 0.9rem;
+        }
+
+
+
+
         /* Coffee Types Section */
         .coffee-types {
             background-color: white;
@@ -337,7 +381,13 @@
             <div class="card-content">
                 <span class="card-category">Classic Tonic</span>
                 <p class="card-description">Bold and aromatic refreshment</p>
-                <p class="card-price">$3.50</p>
+                 <p class="card-price" data-price="6000">6,000 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
             </div>
         </div>
 
@@ -349,7 +399,13 @@
             <div class="card-content">
                 <span class="card-category">Red Bull</span>
                 <p class="card-description">Energy Drink</p>
-                <p class="card-price">$4.50</p>
+                       <p class="card-price" data-price="4000">4,000 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
             </div>
         </div>
 
@@ -361,7 +417,13 @@
             <div class="card-content">
                 <span class="card-category">Cream Fizz</span>
                 <p class="card-description">A creamy delight with a fizzy twist</p>
-                <p class="card-price">$4.75</p>
+                       <p class="card-price" data-price="5000">5,000 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
             </div>
         </div>
 
@@ -373,7 +435,13 @@
             <div class="card-content">
                 <span class="card-category">Velvet Chill</span>
                 <p class="card-description">Smooth, cold, and irresistibly soft</p>
-                <p class="card-price">$4.50</p>
+                      <p class="card-price" data-price="6500">6,500 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
             </div>
         </div>
 
@@ -385,7 +453,13 @@
             <div class="card-content">
                 <span class="card-category">White Mist</span>
                 <p class="card-description">Light and airy with subtle sweetness</p>
-                <p class="card-price">$4.75</p>
+                      <p class="card-price" data-price="5000">5,000 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
             </div>
         </div>
 
@@ -397,7 +471,13 @@
             <div class="card-content">
                 <span class="card-category">Choco Bliss</span>
                 <p class="card-description">A rich blend of chocolate and cream</p>
-                <p class="card-price">$5.00</p>
+                      <p class="card-price" data-price="7500">7,500 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
             </div>
         </div>
 
@@ -409,7 +489,13 @@
     <div class="card-content">
         <span class="card-category">Citrus Breeze</span>
         <p class="card-description">Clean, crisp, and citrus-infused delight</p>
-        <p class="card-price">$3.75</p>
+               <p class="card-price" data-price="7000">7,000 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
     </div>
 </div>
 
@@ -421,7 +507,13 @@
     <div class="card-content">
         <span class="card-category">Pepsi</span>
         <p class="card-description">Energy</p>
-        <p class="card-price">$4.00</p>
+           <p class="card-price" data-price="2500">2,500 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
     </div>
 </div>
 
@@ -433,7 +525,13 @@
     <div class="card-content">
         <span class="card-category">Lemon Water</span>
         <p class="card-description">Healthy Water</p>
-        <p class="card-price">$4.25</p>
+           <p class="card-price" data-price="3000">3,000 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
     </div>
 </div>
 
@@ -445,7 +543,13 @@
     <div class="card-content">
         <span class="card-category">Berry Chill</span>
         <p class="card-description">Icy mix of strawberries and blueberries for a cool burst</p>
-        <p class="card-price">$4.50</p>
+              <p class="card-price" data-price="5000">5,000 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
     </div>
 </div>
 
@@ -457,7 +561,13 @@
     <div class="card-content">
         <span class="card-category">Rose Bloom</span>
         <p class="card-description">Floral rose water blended with lychee and crushed ice</p>
-        <p class="card-price">$4.75</p>
+              <p class="card-price" data-price="2500">2,500 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
     </div>
 </div>
 
@@ -469,7 +579,13 @@
     <div class="card-content">
         <span class="card-category">Tropical Cream</span>
         <p class="card-description">Pineapple and mango swirled with creamy coconut</p>
-        <p class="card-price">$5.50</p>
+               <p class="card-price" data-price="6000">6,000 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
     </div>
 </div>
 
@@ -481,7 +597,13 @@
     <div class="card-content">
         <span class="card-category">Spiced Peach</span>
         <p class="card-description">Chilled peach tea with a subtle spice twist</p>
-        <p class="card-price">$4.25</p>
+               <p class="card-price" data-price="4500">4,500 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
     </div>
 </div>
 
@@ -493,7 +615,13 @@
     <div class="card-content">
         <span class="card-category">Coconut Bliss</span>
         <p class="card-description">Fresh coconut water with lime and crushed mint</p>
-        <p class="card-price">$4.75</p>
+               <p class="card-price" data-price="4000">4,000 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
     </div>
 </div>
 
@@ -505,7 +633,13 @@
     <div class="card-content">
         <span class="card-category">Citrus Fusion</span>
         <p class="card-description">Zesty orange, lemon, and grapefruit over ice</p>
-        <p class="card-price">$5.00</p>
+              <p class="card-price" data-price="5500">5,500 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
     </div>
 </div>
 
@@ -517,7 +651,13 @@
     <div class="card-content">
         <span class="card-category">Green Apple</span>
         <p class="card-description">Green Apple drink Water</p>
-        <p class="card-price">$4.50</p>
+              <p class="card-price" data-price="7000">7,000 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
     </div>
 </div>
     </div></section>
@@ -562,6 +702,43 @@
         <p>&copy; 2023 Brew & Bites. All rights reserved.</p>
     </div>
 </footer>
+
+ <!-- Updated JavaScript section: -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuCards = document.querySelectorAll('.menu-card');
+        
+        menuCards.forEach(card => {
+            const priceElement = card.querySelector('.card-price');
+            const price = parseInt(priceElement.getAttribute('data-price'));
+            const quantityElement = card.querySelector('.quantity');
+            const totalPriceElement = card.querySelector('.total-price');
+            const minusBtn = card.querySelector('.minus');
+            const plusBtn = card.querySelector('.plus');
+            
+            let quantity = 0;
+            
+            function updateDisplay() {
+                quantityElement.textContent = quantity;
+                totalPriceElement.textContent = (quantity * price) + ' IQD';
+            }
+            
+            plusBtn.addEventListener('click', function() {
+                quantity++;
+                updateDisplay();
+            });
+            
+            minusBtn.addEventListener('click', function() {
+                if (quantity > 0) {
+                    quantity--;
+                    updateDisplay();
+                }
+            });
+            
+            updateDisplay();
+        });
+    });
+</script>
 
 </body>
 </html>

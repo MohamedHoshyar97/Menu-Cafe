@@ -178,6 +178,47 @@
             margin-top: 5px;
         }
 
+        /* Quantity Selector Styles */
+        .quantity-selector {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            justify-content: center;
+        }
+
+        .quantity-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s;
+        }
+
+        .quantity-btn:hover {
+            background: var(--accent);
+        }
+
+        .quantity {
+            margin: 0 10px;
+            min-width: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .total-price {
+            margin-top: 8px;
+            font-weight: bold;
+            color: var(--accent);
+            font-size: 0.9rem;
+        }
+
         /* Coffee Types Section */
         .coffee-types {
             background-color: white;
@@ -336,7 +377,13 @@
                 <div class="card-content">
                     <span class="card-category">Espresso</span>
                     <p class="card-description">Intense and aromatic single shot</p>
-                    <p class="card-price">$3.50</p>
+                    <p class="card-price" data-price="6000">6,000 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
                 </div>
             </div>
             
@@ -348,7 +395,13 @@
                 <div class="card-content">
                     <span class="card-category">Double Espresso</span>
                     <p class="card-description">Twice the intensity, twice the pleasure</p>
-                    <p class="card-price">$4.50</p>
+                    <p class="card-price" data-price="6500">6,500 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">$0.00</p>
                 </div>
             </div>
             
@@ -360,7 +413,13 @@
                 <div class="card-content">
                     <span class="card-category">Cappuccino</span>
                     <p class="card-description">Perfect espresso, milk and foam balance</p>
-                    <p class="card-price">$4.75</p>
+                    <p class="card-price" data-price="5000">5,000 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">$0.00</p>
                 </div>
             </div>
             
@@ -372,7 +431,13 @@
                 <div class="card-content">
                     <span class="card-category">Latte</span>
                     <p class="card-description">Smooth espresso with velvety milk</p>
-                    <p class="card-price">$4.50</p>
+                    <p class="card-price" data-price="4500">4,500 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">$0.00</p>
                 </div>
             </div>
             
@@ -384,7 +449,13 @@
                 <div class="card-content">
                     <span class="card-category">Flat White</span>
                     <p class="card-description">Microfoam over rich espresso</p>
-                    <p class="card-price">$4.75</p>
+                    <p class="card-price" data-price="7500">7,500 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">$0.00</p>
                 </div>
             </div>
 
@@ -396,7 +467,13 @@
                 <div class="card-content">
                     <span class="card-category">Mocha</span>
                     <p class="card-description">Espresso with chocolate indulgence</p>
-                    <p class="card-price">$5.00</p>
+                    <p class="card-price" data-price="4500">4,500 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">$0.00</p>
                 </div>
             </div>
 
@@ -408,7 +485,13 @@
                 <div class="card-content">
                     <span class="card-category">Americano</span>
                     <p class="card-description">Espresso lengthened with hot water</p>
-                    <p class="card-price">$3.75</p>
+                    <p class="card-price" data-price="9500">9,500 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">$0.00</p>
                 </div>
             </div>
 
@@ -420,7 +503,13 @@
                 <div class="card-content">
                     <span class="card-category">Macchiato</span>
                     <p class="card-description">Espresso "stained" with milk foam</p>
-                    <p class="card-price">$4.00</p>
+                    <p class="card-price" data-price="8000">8,000 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">$0.00</p>
                 </div>
             </div>
             
@@ -432,7 +521,13 @@
                 <div class="card-content">
                     <span class="card-category">Cortado</span>
                     <p class="card-description">Equal parts espresso and warm milk</p>
-                    <p class="card-price">$4.25</p>
+                    <p class="card-price" data-price="5000">5,000 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">$0.00</p>
                 </div>
             </div>
             
@@ -444,7 +539,13 @@
                 <div class="card-content">
                     <span class="card-category">Cold Brew</span>
                     <p class="card-description">Slow-steeped for 18 hours</p>
-                    <p class="card-price">$4.50</p>
+                    <p class="card-price" data-price="4000">4,000 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">$0.00</p>
                 </div>
             </div>
             
@@ -456,7 +557,13 @@
                 <div class="card-content">
                     <span class="card-category">Iced Latte</span>
                     <p class="card-description">Chilled espresso with cold milk</p>
-                    <p class="card-price">$4.75</p>
+                    <p class="card-price" data-price="5000">5,000 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">$0.00</p>
                 </div>
             </div>
             
@@ -468,7 +575,13 @@
                 <div class="card-content">
                     <span class="card-category">Affogato</span>
                     <p class="card-description">Espresso poured over gelato</p>
-                    <p class="card-price">$5.50</p>
+                    <p class="card-price" data-price="6000">6,000 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">$0.00</p>
                 </div>
             </div>
             
@@ -480,7 +593,13 @@
                 <div class="card-content">
                     <span class="card-category">Turkish</span>
                     <p class="card-description">Traditional unfiltered preparation</p>
-                    <p class="card-price">$4.25</p>
+                    <p class="card-price" data-price="8000">8,000 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">$0.00</p>
                 </div>
             </div>
             
@@ -492,7 +611,13 @@
                 <div class="card-content">
                     <span class="card-category">Vietnamese</span>
                     <p class="card-description">Strong brew with sweetened milk</p>
-                    <p class="card-price">$4.75</p>
+                    <p class="card-price" data-price="6500">6,500 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">$0.00</p>
                 </div>
             </div>
             
@@ -504,7 +629,13 @@
                 <div class="card-content">
                     <span class="card-category">Pour Over</span>
                     <p class="card-description">Handcrafted single-origin coffee</p>
-                    <p class="card-price">$5.00</p>
+                    <p class="card-price" data-price="12000">12,000 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">$0.00</p>
                 </div>
             </div>
             
@@ -516,7 +647,13 @@
                 <div class="card-content">
                     <span class="card-category">French Press</span>
                     <p class="card-description">Full-bodied immersion brew</p>
-                    <p class="card-price">$4.50</p>
+                    <p class="card-price" data-price="10000">10,000 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">$0.00</p>
                 </div>
             </div>
         </div>
@@ -559,5 +696,42 @@
             <p>&copy; 2023 Brew & Bites. All rights reserved.</p>
         </div>
     </footer>
+
+   <!-- Updated JavaScript section: -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuCards = document.querySelectorAll('.menu-card');
+        
+        menuCards.forEach(card => {
+            const priceElement = card.querySelector('.card-price');
+            const price = parseInt(priceElement.getAttribute('data-price'));
+            const quantityElement = card.querySelector('.quantity');
+            const totalPriceElement = card.querySelector('.total-price');
+            const minusBtn = card.querySelector('.minus');
+            const plusBtn = card.querySelector('.plus');
+            
+            let quantity = 0;
+            
+            function updateDisplay() {
+                quantityElement.textContent = quantity;
+                totalPriceElement.textContent = (quantity * price) + ' IQD';
+            }
+            
+            plusBtn.addEventListener('click', function() {
+                quantity++;
+                updateDisplay();
+            });
+            
+            minusBtn.addEventListener('click', function() {
+                if (quantity > 0) {
+                    quantity--;
+                    updateDisplay();
+                }
+            });
+            
+            updateDisplay();
+        });
+    });
+</script>
 </body>
 </html>
