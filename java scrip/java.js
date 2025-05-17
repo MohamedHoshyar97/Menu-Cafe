@@ -142,6 +142,8 @@ function removeCartItem(name) {
     cart = cart.filter(item => item.name !== name);
     saveCartToLocalStorage(cart);
     updateCartDisplay();
+    // Reset menu card quantities
+    setupMenuCards(); // Add this line
     updateMenuCardQuantities();
 }
 
@@ -149,6 +151,8 @@ function clearCart() {
     cart = [];
     saveCartToLocalStorage(cart);
     updateCartDisplay();
+    // Reset menu card quantities
+    setupMenuCards(); // Add this line
     updateMenuCardQuantities();
 }
 
