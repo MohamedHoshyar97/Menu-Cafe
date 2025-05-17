@@ -20,7 +20,7 @@
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), 
                         url('../pictures/in.jpg');
             background-size: cover;
             background-position: center;
@@ -31,6 +31,7 @@
             text-align: center;
             color: white;
             padding: 0 20px;
+             position: relative;
         }
         
         .hero-content h1 {
@@ -352,3 +353,42 @@
     .checkout-btn:hover {
         background: #2bbdd0;
     }
+
+
+
+
+    /*Color Translate*/
+.language-dropdown {
+    position: absolute;
+    top: 30px;        /* adjust this value for vertical spacing */
+    right: 30px;      /* pushes it to the right side */
+    z-index: 100;
+}
+
+.language-dropdown select {
+    background-color: #6F4F37;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    appearance: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='16' height='10' viewBox='0 0 16 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23ffffff' d='M1.41 0L8 6.59 14.59 0 16 1.41 8 9.41 0 1.41z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px 10px;
+    padding-right: 40px;
+}
+
+.language-dropdown select:hover {
+    background-color: #5a3e2e;
+}
+
+.language-dropdown select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(111, 79, 55, 0.5);
+}

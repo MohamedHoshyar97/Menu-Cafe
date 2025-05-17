@@ -171,3 +171,104 @@ function updateMenuCardQuantities() {
         }
     });
 }
+
+
+
+
+
+
+
+
+
+
+
+////Index Translate
+const translations = {
+    ku: {
+        "meta.title": "برو و بایتس | کافێی کارەسەنگ",
+        "hero.title": "بەخێربێن بۆ برو و بایتس",
+        "hero.subtitle": "فێری قاوەی کارەسەنگ و خواردنە دەستکاریکراوەکان لە جێگەیەکی گەرمدا ببە",
+        "menu.view": "بینینی پێڕستی خواردن",
+        "menu.coffee": "قاوە",
+        "menu.drinks": "خواردنەوە",
+        "menu.food": "خواردن",
+        "menu.milkshake": "مێڵک شەیک",
+        "menu.sweets": "شیرینی",
+        "menu.bubble": "بابڵ",
+        "about.title": "چیرۆکی ئێمە",
+        "about.p1": "لە ساڵی ٢٠١٥، برو و بایتس دەست بە کار کرد وەک کافێیەکی ناوچەیی بە ھەوڵی قاوەی باش و خواردنی ماڵی.",
+        "about.p2": "ئاڕاستەی قاوەکان بە شێوەیەکی ڕاستەوخۆ لە کێڵگەی پایەدار دەگرین و لە ناو شوێنەکەمان دەبوخین.",
+        "about.p3": "خواردنەکان لە ماددەی ماڵی درووست دەکرێن بۆ درووستکردنی خواردنە تازە و خۆشەویست.",
+        "about.p4": "لە برو و بایتس، دڵنیاین لە درووستکردنی جێگەیەکی گەرم کە خەڵک بتوانێت بۆ خۆراک و خواردنەوە کۆببنەوە.",
+        "about.imageAlt": "کافێکەمان",
+        "footer.hours": "کاتەکانی کراوەبوون",
+        "footer.weekdays": "دووشەممە - ھەینی: ٧ی بەیانی - ٧ی ئێوارە",
+        "footer.weekend": "شەممە - یەکشەممە: ٨ی بەیانی - ٦ی ئێوارە",
+        "footer.visit": "سەردانی بکە",
+        "footer.address": "١٢٣ شەقامی قاوە",
+        "footer.city": "بروڤیل، BV 12345",
+        "footer.phone": "(١٢٣) ٤٥٦-٧٨٩٠",
+        "footer.copyright": "&copy; ٢٠٢٣ برو و بایتس. ھەموو مافەکان پارێزراون."
+    },
+    ar: {
+        "meta.title": "برو آند بايتس | مقهى الحرفيين",
+        "hero.title": "مرحبًا بكم في برو آند بايتس",
+        "hero.subtitle": "اكتشف قهوتنا الحرفية ووجباتنا المصنوعة يدويًا في أجواء دافئة",
+        "menu.view": "عرض القائمة",
+        "menu.coffee": "قهوة",
+        "menu.drinks": "مشروبات",
+        "menu.food": "طعام",
+        "menu.milkshake": "ميلك شيك",
+        "menu.sweets": "حلويات",
+        "menu.bubble": "فقاعات",
+        "about.title": "قصتنا",
+        "about.p1": "تأسس برو آند بايتس في عام 2015 كمقهى صغير يهتم بالقهوة عالية الجودة والطعام المنزلي.",
+        "about.p2": "نستورد حبوب القهوة مباشرة من المزارع المستدامة ونحمصها داخليًا لإبراز نكهاتها الفريدة.",
+        "about.p3": "نستخدم مكونات محلية لصنع أطباق موسمية طازجة تكمل مشروباتنا تمامًا.",
+        "about.p4": "نؤمن في برو آند بايتس بخلق مساحة دافئة ترحب بالمجتمع حول الطعام والشراب الجيد.",
+        "about.imageAlt": "مقهانا",
+        "footer.hours": "ساعات العمل",
+        "footer.weekdays": "الإثنين - الجمعة: ٧ صباحًا - ٧ مساءً",
+        "footer.weekend": "السبت - الأحد: ٨ صباحًا - ٦ مساءً",
+        "footer.visit": "قم بزيارتنا",
+        "footer.address": "123 شارع القهوة",
+        "footer.city": "بروفيل، BV 12345",
+        "footer.phone": "(123) 456-7890",
+        "footer.copyright": "&copy; 2023 برو آند بايتس. جميع الحقوق محفوظة."
+    },
+    en: {
+        "meta.title": "Brew & Bites | Artisan Cafe",
+        "hero.title": "Welcome to Brew & Bites",
+        "hero.subtitle": "Discover our artisan coffee and handcrafted meals in a cozy atmosphere",
+        "menu.view": "View Menu",
+        "menu.coffee": "Coffee",
+        "menu.drinks": "Drinks",
+        "menu.food": "Food",
+        "menu.milkshake": "Milk Shake",
+        "menu.sweets": "Sweet",
+        "menu.bubble": "Bubble",
+        "about.title": "Our Story",
+        "about.p1": "Founded in 2015, Brew & Bites began as a small neighborhood cafe with a passion for quality coffee and homemade food.",
+        "about.p2": "We source our coffee beans directly from sustainable farms and roast them in-house to bring out their unique flavors.",
+        "about.p3": "Our kitchen uses locally-sourced ingredients to create fresh, seasonal dishes that complement our beverages perfectly.",
+        "about.p4": "At Brew & Bites, we believe in creating a warm, welcoming space where community can flourish over great food and drink.",
+        "about.imageAlt": "Our Cafe",
+        "footer.hours": "Opening Hours",
+        "footer.weekdays": "Monday - Friday: 7am - 7pm",
+        "footer.weekend": "Saturday - Sunday: 8am - 6pm",
+        "footer.visit": "Visit Us",
+        "footer.address": "123 Coffee Street",
+        "footer.city": "Brewville, BV 12345",
+        "footer.phone": "(123) 456-7890",
+        "footer.copyright": "&copy; 2023 Brew & Bites. All rights reserved."
+    },
+
+}
+
+function setLanguage(lang) {
+    const elements = document.querySelectorAll("[data-key]");
+    elements.forEach(el => {
+        const key = el.getAttribute("data-key");
+        el.innerHTML = translations[lang]?.[key] || el.innerHTML;
+    });
+}
