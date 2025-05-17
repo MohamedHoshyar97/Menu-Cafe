@@ -11,7 +11,7 @@
         
         body {
             font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #8ACCD5, #FF90BB, #F8F8E1, #9d526f);
+            background: linear-gradient(135deg, #2A1000, #946142, #381500, #3F1800);
             color: var(--text);
             margin: 0;
             padding: 0;
@@ -21,7 +21,7 @@
         /* Hero Section */
         .hero {
             background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                        url('../pictures/bgm2.png');
+                        url('../pictures/chocc.jpg');
             background-size: cover;
             background-position: center;
             height: 60vh;
@@ -33,9 +33,9 @@
             padding: 0 20px;
         }
         
-        .hero2 {
+   .hero2 {
             background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                        url('../pictures/bgm.png');
+                        url('../pictures/bgc2.jpg');
             background-size: cover;
             background-position: center;
             height: 50vh;
@@ -63,7 +63,7 @@
         }
         
         .btn-menu {
-            background-color: #FF90BB;
+            background-color: #BF9D7D;
             color: white;
             padding: 10px 25px;
             border-radius: 30px;
@@ -76,7 +76,7 @@
         }
         
         .btn-menu:hover {
-            background-color: var(--accent);
+            background-color:  #c952af;
             transform: translateY(-2px);
         }
         
@@ -93,6 +93,7 @@
             text-align: center;
             margin-bottom: 25px;
             color:white;
+             text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
         }
         
         .menu-grid {
@@ -150,7 +151,7 @@
             font-weight: 600;
             padding: 5px 10px;
             border-radius: 20px;
-            color: #FF85A1;
+            color: #2A1000;
             margin-bottom: 6px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -167,11 +168,12 @@
         
         .card-price {
             font-weight: 1000;
-           color: #FF85A1;
+           color: #2A1000;
             margin-top: 5px;
         }
 
-                 /* Quantity Selector Styles */
+        
+        /* Quantity Selector Styles */
         .quantity-selector {
             display: flex;
             align-items: center;
@@ -180,7 +182,7 @@
         }
 
         .quantity-btn {
-            background: #FF90BB;
+            background: #946142;
             color: white;
             border: none;
             border-radius: 50%;
@@ -195,7 +197,7 @@
         }
 
         .quantity-btn:hover {
-            background:#e07ba2;
+            background: #6b462f;
         }
 
         .quantity {
@@ -208,19 +210,19 @@
         .total-price {
             margin-top: 8px;
             font-weight: bold;
-            color: #FF90BB;
+            color: var(--accent);
             font-size: 0.9rem;
         }
 
 
         /* Coffee Types Section */
-        .coffee-types {
+        .dessert-types {
             background-color: white;
             padding: 40px 15px;
             margin-top: 40px;
         }
         
-        .coffee-container {
+        .dessert-container {
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
@@ -228,7 +230,7 @@
             gap: 30px;
         }
         
-        .coffee-text h2 {
+        .dessert-text h2 {
             font-family: 'Playfair Display', serif;
             font-size: 1.8rem;
             color: var(--dark);
@@ -236,7 +238,7 @@
             text-align: center;
         }
         
-        .coffee-text p {
+        .dessert-text p {
             color: var(--text-light);
             margin-bottom: 1.2rem;
             line-height: 1.6;

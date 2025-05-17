@@ -4,318 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sweet Delights | Premium Dessert Selection</title>
+      <script src="../java scrip/java.js"></script>
+      <link rel="stylesheet" href="../css/sweet.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap">
-    <style>
-        :root {
-            --dark: #2A2826;
-            --primary: #A67C52;
-            --secondary: #BF9D7D;
-            --light: #F4F0EB;
-            --accent: #8C6A4D;
-            --text: #3E3B39;
-            --text-light: #7A766F;
-        }
-        
-        body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #2A1000, #946142, #381500, #3F1800);
-            color: var(--text);
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                        url('../pictures/chocc.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 60vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            padding: 0 20px;
-        }
-        
-   .hero2 {
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                        url('../pictures/bgc2.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 50vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            padding: 0 20px;
-            margin-top: 50px;
-        }
-        
-        .hero-content h1, .hero2-content h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-        }
-        
-        .hero-content p, .hero2-content p {
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin: 0 auto 2rem;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-        }
-        
-        .btn-menu {
-            background-color: #BF9D7D;
-            color: white;
-            padding: 10px 25px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s;
-            border: none;
-            cursor: pointer;
-            font-size: 0.9rem;
-        }
-        
-        .btn-menu:hover {
-            background-color:  #c952af;
-            transform: translateY(-2px);
-        }
-        
-        /* Menu Grid */
-        .menu-container {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 15px;
-        }
-        
-        .section-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            text-align: center;
-            margin-bottom: 25px;
-            color:white;
-             text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-        }
-        
-        .menu-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-        }
-        
-        .menu-card {
-            background: #ffffff;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow:3px 5px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            height: auto;
-        }
-        
-        .menu-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-        }
-        
-        .card-image-container {
-            width: 100%;
-            height: 0;
-            padding-bottom: 70%;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .card-image {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
-        
-        .card-content {
-            padding: 12px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            flex-grow: 1;
-        }
-        
-        .card-category {
-            display: inline-block;
-            font-size: 0.9rem;
-            font-weight: 600;
-            padding: 5px 10px;
-            border-radius: 20px;
-            color: #2A1000;
-            margin-bottom: 6px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        
-        .card-description {
-            color: var(--text-light);
-            font-size: 0.8rem;
-            text-align: center;
-            padding: 0 8px;
-            margin-bottom: 5px;
-            line-height: 1.4;
-        }
-        
-        .card-price {
-            font-weight: 1000;
-           color: #2A1000;
-            margin-top: 5px;
-        }
-
-        /* Coffee Types Section */
-        .dessert-types {
-            background-color: white;
-            padding: 40px 15px;
-            margin-top: 40px;
-        }
-        
-        .dessert-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 30px;
-        }
-        
-        .dessert-text h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            color: var(--dark);
-            margin-bottom: 1.2rem;
-            text-align: center;
-        }
-        
-        .dessert-text p {
-            color: var(--text-light);
-            margin-bottom: 1.2rem;
-            line-height: 1.6;
-            text-align: center;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            font-size: 0.95rem;
-        }
-        
-        /* Footer */
-        .footer {
-            background-color: var(--dark);
-            color: white;
-            padding: 30px 15px 15px;
-        }
-        
-        .footer-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 25px;
-        }
-        
-        .footer h3 {
-            font-family: 'Playfair Display', serif;
-            margin-bottom: 12px;
-            color: var(--secondary);
-            font-size: 1.3rem;
-        }
-        
-        .footer p {
-            margin: 4px 0;
-            color: var(--light);
-            font-size: 0.9rem;
-        }
-        
-        .footer-bottom {
-            text-align: center;
-            margin-top: 30px;
-            padding-top: 15px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            font-size: 0.85rem;
-        }
-        
-        /* Responsive */
-        @media (min-width: 480px) {
-            .menu-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .hero-content h1, .hero2-content h1 {
-                font-size: 3rem;
-            }
-            
-            .hero-content p, .hero2-content p {
-                font-size: 1.1rem;
-            }
-            
-            .btn-menu {
-                padding: 12px 30px;
-                font-size: 1rem;
-            }
-        }
-        
-        @media (min-width: 768px) {
-            .hero-content h1, .hero2-content h1 {
-                font-size: 3.5rem;
-            }
-            
-            .section-title {
-                font-size: 2rem;
-            }
-            
-            .menu-grid {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 20px;
-            }
-            
-            .card-category {
-                font-size: 1rem;
-            }
-            
-            .card-description {
-                font-size: 0.85rem;
-            }
-            
-            .card-price {
-                font-size: 1rem;
-            }
-            
-            .footer-container {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-        
-        @media (min-width: 1024px) {
-            .menu-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-            
-            .hero-content h1, .hero2-content h1 {
-                font-size: 4rem;
-            }
-            
-            .menu-container {
-                padding: 0 20px;
-            }
-        }
-    </style>
+   
 </head>
 <body>
+
+    
+        <!-- Add this cart icon at the top of the body -->
+<div class="cart-icon" onclick="toggleCart()">
+    🛒 <span class="cart-count">0</span>
+</div>
+
+<!-- Add this cart sidebar -->
+<div class="cart-sidebar">
+    <div class="cart-header">
+        <h3>Your Order</h3>
+        <button class="close-cart" onclick="toggleCart()">&times;</button>
+    </div>
+    <div class="cart-items"></div>
+    <div class="cart-total">
+        Total: <span id="cart-total-price">0 IQD</span>
+    </div>
+  
+</div>
+
 
 <!-- Hero Section -->
     <section class="hero">
@@ -338,7 +52,13 @@
                 <div class="card-content">
                     <span class="card-category">Crepe</span>
                     <p class="card-description">Delicate crepe filled with rich Nutella and fresh strawberries</p>
-                    <p class="card-price">$6.50</p>
+                                        <p class="card-price" data-price="6000">6,000 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
                 </div>
             </div>
             
@@ -350,7 +70,13 @@
                 <div class="card-content">
                     <span class="card-category">Cake</span>
                     <p class="card-description">Warm chocolate cake with molten center, served with vanilla ice cream</p>
-                    <p class="card-price">$7.50</p>
+                                       <p class="card-price" data-price="6500">6,500 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
                 </div>
             </div>
             
@@ -362,7 +88,13 @@
                 <div class="card-content">
                     <span class="card-category">Donut</span>
                     <p class="card-description">Artisanal donut with Nutella filling and crushed hazelnuts</p>
-                    <p class="card-price">$4.75</p>
+                                  <p class="card-price" data-price="5000">5,000 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
                 </div>
             </div>
             
@@ -374,7 +106,13 @@
                 <div class="card-content">
                     <span class="card-category">Classic</span>
                     <p class="card-description">Traditional Italian dessert with layers of coffee-soaked ladyfingers</p>
-                    <p class="card-price">$6.50</p>
+                                 <p class="card-price" data-price="4500">4,500 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
                 </div>
             </div>
             
@@ -386,7 +124,13 @@
                 <div class="card-content">
                     <span class="card-category">Cake</span>
                     <p class="card-description">Moist red velvet layers with cream cheese frosting</p>
-                    <p class="card-price">$6.75</p>
+                               <p class="card-price" data-price="7500">7,500 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
                 </div>
             </div>
 
@@ -398,7 +142,13 @@
                 <div class="card-content">
                     <span class="card-category">French</span>
                     <p class="card-description">Assortment of delicate French macarons in various flavors</p>
-                    <p class="card-price">$8.00</p>
+                                   <p class="card-price" data-price="4500">4,500 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
                 </div>
             </div>
 
@@ -410,7 +160,13 @@
                 <div class="card-content">
                     <span class="card-category">Classic</span>
                     <p class="card-description">New York style cheesecake with berry compote</p>
-                    <p class="card-price">$6.75</p>
+                            <p class="card-price" data-price="9500">9,500 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
                 </div>
             </div>
 
@@ -422,7 +178,13 @@
                 <div class="card-content">
                     <span class="card-category">Shareable</span>
                     <p class="card-description">Rich melted chocolate with fruit and pastry dippers</p>
-                    <p class="card-price">$12.00</p>
+                           <p class="card-price" data-price="12000">12,000 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
                 </div>
             </div>
 
@@ -435,7 +197,13 @@
                 <div class="card-content">
                     <span class="card-category">Classic</span>
                     <p class="card-description">Light and airy dark chocolate mousse with whipped cream</p>
-                    <p class="card-price">$6.50</p>
+                                    <p class="card-price" data-price="5000">5,000 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
                 </div>
             </div>
             
@@ -448,7 +216,13 @@
                 <div class="card-content">
                     <span class="card-category">Nutella</span>
                     <p class="card-description">Fluffy pancakes drizzled with Nutella and fresh bananas</p>
-                    <p class="card-price">$8.00</p>
+                                     <p class="card-price" data-price="4000">4,000 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
                 </div>
             </div>
             
@@ -460,7 +234,13 @@
                 <div class="card-content">
                     <span class="card-category">Chocolate Soufflé</span>
                     <p class="card-description">Light chocolate soufflé with a molten center</p>
-                    <p class="card-price">$7.00</p>
+                                       <p class="card-price" data-price="5000">5,000 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
                 </div>
             </div>
             
@@ -472,7 +252,13 @@
                 <div class="card-content">
                     <span class="card-category">Belgian Waffles </span>
                     <p class="card-description">Crispy waffles with Nutella, strawberries and whipped cream</p>
-                    <p class="card-price">$8.50</p>
+                                   <p class="card-price" data-price="6000">6,000 IQD</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <p class="total-price">0</p>
                 </div></div></div></section>
 
     <!-- Second Hero Section -->
