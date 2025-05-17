@@ -481,3 +481,32 @@
     .checkout-btn:hover {
         background: #2bbdd0;
     }
+
+
+    
+      .remove-item {
+            background: none;
+            border: 1px solid #ff4444;
+            color: #ff4444;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            align-self: center;
+        }
+
+        .remove-item:hover {
+            background: #ff4444;
+            color: white;
+        }
+
+        /* Remove All Button */
+        #remove-all-items {
+            width: 100%;
+            padding: 12px;
+            background: #ff4444;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 4px;
+        }

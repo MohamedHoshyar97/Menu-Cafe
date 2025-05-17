@@ -11,7 +11,7 @@
         
         body {
             font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #8ACCD5, #FF90BB, #F8F8E1, #9d526f);
+            background-color: var(--light);
             color: var(--text);
             margin: 0;
             padding: 0;
@@ -21,7 +21,7 @@
         /* Hero Section */
         .hero {
             background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                        url('../pictures/bgm2.png');
+                        url('../pictures/in.jpg');
             background-size: cover;
             background-position: center;
             height: 60vh;
@@ -33,46 +33,30 @@
             padding: 0 20px;
         }
         
-        .hero2 {
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                        url('../pictures/bgm.png');
-            background-size: cover;
-            background-position: center;
-            height: 50vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            padding: 0 20px;
-            margin-top: 50px;
-        }
-        
-        .hero-content h1, .hero2-content h1 {
+        .hero-content h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin-bottom: 1rem;
             text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
         }
         
-        .hero-content p, .hero2-content p {
-            font-size: 1.1rem;
+        .hero-content p {
+            font-size: 1.2rem;
             max-width: 600px;
             margin: 0 auto 2rem;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
         }
         
         .btn-menu {
-            background-color: #FF90BB;
+            background-color: var(--primary);
             color: white;
-            padding: 10px 25px;
+            padding: 12px 30px;
             border-radius: 30px;
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s;
             border: none;
             cursor: pointer;
-            font-size: 0.9rem;
         }
         
         .btn-menu:hover {
@@ -83,60 +67,42 @@
         /* Menu Grid */
         .menu-container {
             max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 15px;
-        }
-        
-        .section-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            text-align: center;
-            margin-bottom: 25px;
-            color:white;
+            margin: 50px auto;
+            padding: 0 20px;
         }
         
         .menu-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
+            gap: 20px;
         }
         
         .menu-card {
-            background: #ffffff;
-            border-radius: 10px;
+            background: white;
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow:3px 5px rgba(0,0,0,0.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
             transition: transform 0.3s ease;
+            aspect-ratio: 1/1; /* Makes cards square */
             display: flex;
             flex-direction: column;
-            height: auto;
+             text-decoration: none;
         }
         
         .menu-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-        }
-        
-        .card-image-container {
-            width: 100%;
-            height: 0;
-            padding-bottom: 70%;
-            position: relative;
-            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+             text-decoration: none;
         }
         
         .card-image {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
-            height: 100%;
+            height: 70%; /* Adjust image height to make more square */
             object-fit: cover;
-            object-position: center;
         }
         
         .card-content {
-            padding: 12px;
+            padding: 10px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -146,112 +112,56 @@
         
         .card-category {
             display: inline-block;
-            font-size: 0.9rem;
+            font-size: 18px;
             font-weight: 600;
-            padding: 5px 10px;
+            padding: 6px 12px;
             border-radius: 20px;
-            color: #FF85A1;
-            margin-bottom: 6px;
+            color: var(--primary);
+            margin-bottom: 8px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
+
         
-        .card-description {
-            color: var(--text-light);
-            font-size: 0.8rem;
-            text-align: center;
-            padding: 0 8px;
-            margin-bottom: 5px;
-            line-height: 1.4;
-        }
-        
-        .card-price {
-            font-weight: 1000;
-           color: #FF85A1;
-            margin-top: 5px;
-        }
-
-                 /* Quantity Selector Styles */
-        .quantity-selector {
-            display: flex;
-            align-items: center;
-            margin-top: 10px;
-            justify-content: center;
-        }
-
-        .quantity-btn {
-            background: #FF90BB;
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 25px;
-            height: 25px;
-            cursor: pointer;
-            font-size: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background 0.3s;
-        }
-
-        .quantity-btn:hover {
-            background:#e07ba2;
-        }
-
-        .quantity {
-            margin: 0 10px;
-            min-width: 20px;
-            text-align: center;
-            font-weight: bold;
-        }
-
-        .total-price {
-            margin-top: 8px;
-            font-weight: bold;
-            color: #FF90BB;
-            font-size: 0.9rem;
-        }
-
-
-        /* Coffee Types Section */
-        .coffee-types {
+        /* About Section */
+        .about {
             background-color: white;
-            padding: 40px 15px;
-            margin-top: 40px;
+            padding: 60px 20px;
+            margin-top: 50px;
         }
         
-        .coffee-container {
+        .about-container {
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
             grid-template-columns: 1fr;
-            gap: 30px;
+            gap: 40px;
         }
         
-        .coffee-text h2 {
+        .about-text h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
+            font-size: 2rem;
             color: var(--dark);
-            margin-bottom: 1.2rem;
-            text-align: center;
+            margin-bottom: 1.5rem;
         }
         
-        .coffee-text p {
+        .about-text p {
             color: var(--text-light);
-            margin-bottom: 1.2rem;
-            line-height: 1.6;
-            text-align: center;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+        
+        .about-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
         
         /* Footer */
         .footer {
             background-color: var(--dark);
             color: white;
-            padding: 30px 15px 15px;
+            padding: 40px 20px 20px;
         }
         
         .footer-container {
@@ -259,74 +169,40 @@
             margin: 0 auto;
             display: grid;
             grid-template-columns: 1fr;
-            gap: 25px;
+            gap: 30px;
         }
         
         .footer h3 {
             font-family: 'Playfair Display', serif;
-            margin-bottom: 12px;
+            margin-bottom: 15px;
             color: var(--secondary);
-            font-size: 1.3rem;
         }
         
         .footer p {
-            margin: 4px 0;
+            margin: 5px 0;
             color: var(--light);
-            font-size: 0.9rem;
         }
         
         .footer-bottom {
             text-align: center;
-            margin-top: 30px;
-            padding-top: 15px;
+            margin-top: 40px;
+            padding-top: 20px;
             border-top: 1px solid rgba(255,255,255,0.1);
-            font-size: 0.85rem;
         }
         
         /* Responsive */
-        @media (min-width: 480px) {
-            .menu-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .hero-content h1, .hero2-content h1 {
-                font-size: 3rem;
-            }
-            
-            .hero-content p, .hero2-content p {
-                font-size: 1.1rem;
-            }
-            
-            .btn-menu {
-                padding: 12px 30px;
-                font-size: 1rem;
-            }
-        }
-        
         @media (min-width: 768px) {
-            .hero-content h1, .hero2-content h1 {
-                font-size: 3.5rem;
-            }
-            
-            .section-title {
-                font-size: 2rem;
+            .hero-content h1 {
+                font-size: 4rem;
             }
             
             .menu-grid {
                 grid-template-columns: repeat(3, 1fr);
-                gap: 20px;
             }
             
-            .card-category {
-                font-size: 1rem;
-            }
-            
-            .card-description {
-                font-size: 0.85rem;
-            }
-            
-            .card-price {
-                font-size: 1rem;
+            .about-container {
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
             }
             
             .footer-container {
@@ -339,14 +215,13 @@
                 grid-template-columns: repeat(4, 1fr);
             }
             
-            .hero-content h1, .hero2-content h1 {
-                font-size: 4rem;
-            }
-            
-            .menu-container {
-                padding: 0 20px;
+            .hero-content h1 {
+                font-size: 4.5rem;
             }
         }
+
+
+        
             /* Cart Icon Styles */
     .cart-icon {
        border-radius: 30px;
@@ -477,6 +352,7 @@
     .checkout-btn:hover {
         background: #2bbdd0;
     }
+
 
     
     
