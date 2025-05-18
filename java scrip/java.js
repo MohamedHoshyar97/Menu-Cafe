@@ -184,11 +184,13 @@ function updateMenuCardQuantities() {
 
 ////Index Translate
 const translations = {
-    ku: {
+    ku: {    
+
+        ////Index Translate
         "meta.title": "برو و بایتس | کافێی کارەسەنگ",
         "hero.title": "بەخێربێن بۆ برو و بایتس",
         "hero.subtitle": "فێری قاوەی کارەسەنگ و خواردنە دەستکاریکراوەکان لە جێگەیەکی گەرمدا ببە",
-        "menu.view": "بینینی پێڕستی خواردن",
+        "menu.view": "بینینی مینو",
         "menu.coffee": "قاوە",
         "menu.drinks": "خواردنەوە",
         "menu.food": "خواردن",
@@ -204,13 +206,63 @@ const translations = {
         "footer.hours": "کاتەکانی کراوەبوون",
         "footer.weekdays": "دووشەممە - ھەینی: ٧ی بەیانی - ٧ی ئێوارە",
         "footer.weekend": "شەممە - یەکشەممە: ٨ی بەیانی - ٦ی ئێوارە",
-        "footer.visit": "سەردانی بکە",
+        "footer.visit": "سەردانمان بکە",
         "footer.address": "١٢٣ شەقامی قاوە",
         "footer.city": "بروڤیل، BV 12345",
         "footer.phone": "(١٢٣) ٤٥٦-٧٨٩٠",
-        "footer.copyright": "&copy; ٢٠٢٣ برو و بایتس. ھەموو مافەکان پارێزراون."
+        "footer.copyright": "&copy; ٢٠٢٣ برو و بایتس. ھەموو مافەکان پارێزراون.",
+
+
+
+
+        ////coffe Translate
+        
+        "hero.title2": "هەلبژاردەی قاوەی کارەسەنگ",
+        "hero.subtitle2": "فێری ١٦ تاقیکردنەوەی قاوەی باڵا ببە بە دەستکاری بەریستاکانی شارەزا",
+
+        "coffee.espresso.name": "ئەسپرسۆ",
+        "coffee.espresso.desc": "شۆتیەکی توند و بۆنەدار",
+
+        "coffee.double.name": "دووبڵ ئەسپرسۆ",
+        "coffee.double.desc": "دوو هێز، دوو خۆشی",
+
+        "coffee.cappuccino.name": "کاپوچینو",
+        "coffee.cappuccino.desc": "هاوەنگی قاوە، شێر و فۆم",
+
+        "coffee.latte.name": "لاتێ",
+        "coffee.latte.desc": "قاوەی نەرم بە شێری ڕەق",
+
+        "coffee.flatwhite.name": "فلات وایت",
+        "coffee.flatwhite.desc": "فۆمی نەرم لەسەر قاوەی دەرووندار",
+
+        "coffee.mocha.name": "موکا",
+        "coffee.mocha.desc": "قاوەیەک بە چەکڵەتی ڕەق",
+
+        "coffee.americano.name": "ئامێریکانۆ",
+        "coffee.americano.name": "قاوەی درێژکراو بە ئاو",
+
+        "coffee.macchiato.name": "ماکیاطۆ",
+        "coffee.macchiato.desc": "قاوەیەک بە فۆمی شێر",
+
+        "coffee.cortado.name": "کۆرتادۆ",
+        "coffee.cortado.desc": "بەڕابەری قاوە و شێری گەرمیەوە",
+
+        "coffee.coldbrew.name": "کۆلد برو",
+        "coffee.coldbrew.desc": "قاوەی ساردی پەخراو بۆ ١٨ کاتژمێر",
+
+        "coffee.icedlatte.name": "لاتێی سارد",
+        "coffee.icedlatte.desc": "ئەسپرسۆی سارد بە شێر و بەفر",
+
+        "coffee.affogato.name": "ئافۆگاتۆ",
+        "coffee.affogato.desc": "دەریای ئەسپرسۆی گەرەم لەسەر ئایس کریمی ڕەق",
+        "text":"تامێکی نایاب",
+        "explore":"بینینی قاوەکان",
+        "text2":"بینینی لیستی بەرهەم"
+
     },
     ar: {
+
+         ////Index Translate
         "meta.title": "برو آند بايتس | مقهى الحرفيين",
         "hero.title": "مرحبًا بكم في برو آند بايتس",
         "hero.subtitle": "اكتشف قهوتنا الحرفية ووجباتنا المصنوعة يدويًا في أجواء دافئة",
@@ -234,9 +286,67 @@ const translations = {
         "footer.address": "123 شارع القهوة",
         "footer.city": "بروفيل، BV 12345",
         "footer.phone": "(123) 456-7890",
-        "footer.copyright": "&copy; 2023 برو آند بايتس. جميع الحقوق محفوظة."
+        "footer.copyright": "&copy; 2023 برو آند بايتس. جميع الحقوق محفوظة.",
+
+
+
+
+        ////coffe Translate
+        "hero.title2": "تشكيلة القهوة الحرفية",
+"hero.subtitle2": "اكتشف ١٦ تجربة قهوة فاخرة من إعداد خبرائنا",
+
+"coffee.espresso.name": "إسبريسو",
+"coffee.espresso.desc": "قهوة مركزة وعطرية بطلقة واحدة",
+
+"coffee.double.name": "إسبريسو مزدوج",
+"coffee.double.desc": "مرتين القوة، مرتين المتعة",
+
+"coffee.cappuccino.name": "كابتشينو",
+"coffee.cappuccino.desc": "توازن مثالي بين الإسبريسو والحليب والرغوة",
+
+"coffee.latte.name": "لاتيه",
+"coffee.latte.desc": "إسبريسو ناعم مع حليب مخملي",
+
+"coffee.flatwhite.name": "فلات وايت",
+"coffee.flatwhite.desc": "رغوة ناعمة على إسبريسو غني",
+
+"coffee.mocha.name": "موكا",
+"coffee.mocha.desc": "إسبريسو مع طعم الشوكولاتة",
+
+"coffee.americano.name": "أمريكانو",
+"coffee.americano.desc": "إسبريسو ممدد بالماء الساخن",
+
+"coffee.macchiato.name": "ماكياتو",
+"coffee.macchiato.desc": "إسبريسو مع لمسة من رغوة الحليب",
+
+"coffee.cortado.name": "كورتادو",
+"coffee.cortado.desc": "نصف إسبريسو ونصف حليب دافئ",
+
+"coffee.coldbrew.name": "كولد برو",
+"coffee.coldbrew.desc": "منقوع ببطء لمدة 18 ساعة",
+
+"coffee.icedlatte.name": "لاتيه مثلج",
+"coffee.icedlatte.desc": "إسبريسو بارد مع حليب ومكعبات ثلج",
+
+"coffee.affogato.name": "أفوقاتو",
+"coffee.affogato.desc": "آيس كريم فانيليا يغمر بإسبريسو ساخن",
+
+"coffee.turkish.name": "قهوة تركية",
+"coffee.turkish.desc": "قهوة تقليدية غير مفلترة بالهيل",
+
+"coffee.vietnamese.name": "قهوة فيتنامية مثلجة",
+"coffee.vietnamese.desc": "حليب مكثف محلى مع قهوة قوية على الثلج",
+
+"coffee.pourover.name": "بور أوفر",
+"coffee.pourover.desc": "قهوة يدوية من مصدر واحد",
+
+"coffee.frenchpress.name": "فرنش بريس",
+"coffee.frenchpress.desc": "قهوة كاملة الجسم بطريقة النقع"
+
     },
     en: {
+
+         ////Index Translate
         "meta.title": "Brew & Bites | Artisan Cafe",
         "hero.title": "Welcome to Brew & Bites",
         "hero.subtitle": "Discover our artisan coffee and handcrafted meals in a cozy atmosphere",
@@ -260,15 +370,84 @@ const translations = {
         "footer.address": "123 Coffee Street",
         "footer.city": "Brewville, BV 12345",
         "footer.phone": "(123) 456-7890",
-        "footer.copyright": "&copy; 2023 Brew & Bites. All rights reserved."
+        "footer.copyright": "&copy; 2023 Brew & Bites. All rights reserved.",
+
+
+
+
+        ////coffe Translate
+        "hero.title2": "Artisan Coffee Selection",
+"hero.subtitle2": "Discover 16 premium coffee experiences crafted by our master baristas",
+
+"coffee.espresso.name": "Espresso",
+"coffee.espresso.desc": "Intense and aromatic single shot",
+
+"coffee.double.name": "Double Espresso",
+"coffee.double.desc": "Twice the intensity, twice the pleasure",
+
+"coffee.cappuccino.name": "Cappuccino",
+"coffee.cappuccino.desc": "Perfect espresso, milk and foam balance",
+
+"coffee.latte.name": "Latte",
+"coffee.latte.desc": "Smooth espresso with velvety milk",
+
+"coffee.flatwhite.name": "Flat White",
+"coffee.flatwhite.desc": "Microfoam over rich espresso",
+
+"coffee.mocha.name": "Mocha",
+"coffee.mocha.desc": "Espresso with chocolate indulgence",
+
+"coffee.americano.name": "Americano",
+"coffee.americano.desc": "Espresso lengthened with hot water",
+
+"coffee.macchiato.name": "Macchiato",
+"coffee.macchiato.desc": "Espresso \"stained\" with milk foam",
+
+"coffee.cortado.name": "Cortado",
+"coffee.cortado.desc": "Equal parts espresso and warm milk",
+
+"coffee.coldbrew.name": "Cold Brew",
+"coffee.coldbrew.desc": "Slow-steeped for 18 hours",
+
+"coffee.icedlatte.name": "Iced Latte",
+"coffee.icedlatte.desc": "Chilled espresso with cold milk and ice",
+
+"coffee.affogato.name": "Affogato",
+"coffee.affogato.desc": "Vanilla ice cream drowned in hot espresso",
+
+"coffee.turkish.name": "Turkish Coffee",
+"coffee.turkish.desc": "Traditional unfiltered coffee with cardamom",
+
+"coffee.vietnamese.name": "Vietnamese Iced Coffee",
+"coffee.vietnamese.desc": "Sweetened condensed milk with strong coffee over ice",
+
+"coffee.pourover.name": "Pour Over",
+"coffee.pourover.desc": "Handcrafted single-origin coffee",
+
+"coffee.frenchpress.name": "French Press",
+"coffee.frenchpress.desc": "Full-bodied immersion brew"
+
     },
-
 }
-
 function setLanguage(lang) {
-    const elements = document.querySelectorAll("[data-key]");
-    elements.forEach(el => {
-        const key = el.getAttribute("data-key");
-        el.innerHTML = translations[lang]?.[key] || el.innerHTML;
-    });
+    localStorage.setItem("selectedLanguage", lang);
+    translatePage(lang);
 }
+
+function translatePage(lang) {
+    document.querySelectorAll("[data-key]").forEach(el => {
+        const key = el.getAttribute("data-key");
+        if (translations[lang] && translations[lang][key]) {
+            el.textContent = translations[lang][key];
+        }
+    });
+    document.documentElement.lang = lang;
+}
+
+// Auto-load saved language on page load
+document.addEventListener("DOMContentLoaded", () => {
+    const savedLang = localStorage.getItem("selectedLanguage") || "en";
+    setLanguage(savedLang);
+    const select = document.getElementById("languageSelect");
+    if (select) select.value = savedLang;
+});
