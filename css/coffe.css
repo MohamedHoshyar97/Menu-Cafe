@@ -46,6 +46,7 @@
             color: white;
             padding: 0 20px;
             margin-top: 50px;
+            box-shadow: 1px 10px 15px 3px rgba(0, 0, 0, 0.5);
         }
         
         .hero-content h1, .hero2-content h1 {
@@ -248,8 +249,8 @@
         
         /* Footer */
         .footer {
-            margin-top: 30px;
-            background-color: #1e0a0a;
+            margin-top: 50px;
+            background-color: #22190e;
             color: white;
             padding: 30px 15px 15px;
         }

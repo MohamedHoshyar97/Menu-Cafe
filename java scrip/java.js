@@ -217,20 +217,20 @@ const translations = {
 
         ////coffe Translate
         
-        "hero.title2": "هەلبژاردەی قاوەی کارەسەنگ",
-        "hero.subtitle2": "فێری ١٦ تاقیکردنەوەی قاوەی باڵا ببە بە دەستکاری بەریستاکانی شارەزا",
+        "hero.title2": "هەڵبژاردەی قاوە جیهانییەکان",
+        "hero.subtitle2":"١٦ جۆری قاوەی جۆراو جۆر و تایبەت و هەمەڕەنگ دەتوانی تاقیبکەیتەوە ",
 
         "coffee.espresso.name": "ئەسپرسۆ",
         "coffee.espresso.desc": "شۆتیەکی توند و بۆنەدار",
 
-        "coffee.double.name": "دووبڵ ئەسپرسۆ",
+        "coffee.double.name": "دەبڵ ئەسپرسۆ",
         "coffee.double.desc": "دوو هێز، دوو خۆشی",
 
         "coffee.cappuccino.name": "کاپوچینو",
         "coffee.cappuccino.desc": "هاوەنگی قاوە، شێر و فۆم",
 
-        "coffee.latte.name": "لاتێ",
-        "coffee.latte.desc": "قاوەی نەرم بە شێری ڕەق",
+        "coffee.latte.name": "لەیت",
+        "coffee.latte.desc": "قاوەی نەرم بە شیر",
 
         "coffee.flatwhite.name": "فلات وایت",
         "coffee.flatwhite.desc": "فۆمی نەرم لەسەر قاوەی دەرووندار",
@@ -241,7 +241,7 @@ const translations = {
         "coffee.americano.name": "ئامێریکانۆ",
         "coffee.americano.name": "قاوەی درێژکراو بە ئاو",
 
-        "coffee.macchiato.name": "ماکیاطۆ",
+        "coffee.macchiato.name": "ماکیاتۆ",
         "coffee.macchiato.desc": "قاوەیەک بە فۆمی شێر",
 
         "coffee.cortado.name": "کۆرتادۆ",
@@ -341,7 +341,10 @@ const translations = {
 "coffee.pourover.desc": "قهوة يدوية من مصدر واحد",
 
 "coffee.frenchpress.name": "فرنش بريس",
-"coffee.frenchpress.desc": "قهوة كاملة الجسم بطريقة النقع"
+"coffee.frenchpress.desc": "قهوة كاملة الجسم بطريقة النقع",
+ "text": "طعم نادر",
+  "explore": "عرض القهوة",
+  "text2": "عرض قائمة المنتجات"
 
     },
     en: {
