@@ -232,7 +232,7 @@ const translations = {
         "coffee.latte.name": "لەیت",
         "coffee.latte.desc": "قاوەی نەرم بە شیر",
 
-        "coffee.flatwhite.name": "فلات وایت",
+        "coffee.flatwhite.name": "فڵات وایت",
         "coffee.flatwhite.desc": "فۆمی نەرم لەسەر قاوەی دەرووندار",
 
         "coffee.mocha.name": "موکا",
@@ -250,10 +250,10 @@ const translations = {
         "coffee.coldbrew.name": "کۆلد برو",
         "coffee.coldbrew.desc": "قاوەی ساردی پەخراو بۆ ١٨ کاتژمێر",
 
-        "coffee.icedlatte.name": "لاتێی سارد",
+        "coffee.icedlatte.name": "لەیتی سارد",
         "coffee.icedlatte.desc": "ئەسپرسۆی سارد بە شێر و بەفر",
 
-        "coffee.affogato.name": "ئافۆگاتۆ",
+        "coffee.affogato.name": "ئاڤۆگاتۆ",
         "coffee.affogato.desc": "دەریای ئەسپرسۆی گەرەم لەسەر ئایس کریمی ڕەق",
         "text":"تامێکی نایاب",
         "explore":"بینینی قاوەکان",
@@ -285,7 +285,7 @@ const translations = {
         "footer.visit": "قم بزيارتنا",
         "footer.address": "123 شارع القهوة",
         "footer.city": "بروفيل، BV 12345",
-        "footer.phone": "(123) 456-7890",
+        "footer.phone": "(123) ٤٥٦-٧٨٩",
         "footer.copyright": "&copy; 2023 برو آند بايتس. جميع الحقوق محفوظة.",
 
 
