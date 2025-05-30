@@ -6,6 +6,7 @@
     <title>Brew & Bites | Premium Coffee Selection</title>
     <link rel="stylesheet" href="../css/food.css">
     <script src="../java scrip/java.js"></script>
+     <script src="../java scrip/translate.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap">
 </head>
 <body>
@@ -32,15 +33,15 @@
 <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Gourmet Dining Experience</h1>
-            <p>Discover 16 exquisite dishes crafted by our master chefs</p>
-            <a href="#food-menu" class="btn-menu">Explore Our Menu</a>
+            <h1 data-key="hero.title4">Gourmet Dining Experience</h1>
+            <p data-key="hero.subtitle4">Discover 16 exquisite dishes crafted by our master chefs</p>
+            <a href="#food-menu" class="btn-menu" data-key="explore4">Explore Our Menu</a>
         </div>
     </section>
 
     <!-- Food Menu Grid -->
     <section id="food-menu" class="menu-container">
-        <h2 class="section-title">Our Signature Dishes</h2>
+        <h2 class="section-title" data-key="text2">Our Signature Dishes</h2>
         <div class="menu-grid">
             <!-- Burger -->
             <div class="menu-card">
@@ -48,8 +49,8 @@
                     <img src="../pictures/burger.jpg" class="card-image" alt="Burger">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Burger</span>
-                    <p class="card-description">Fast & Food</p>
+                    <span class="card-category"  data-key="burger">Burger</span>
+                    <p class="card-description" data-key="burger.dec">Fast & Food</p>
                  <p class="card-price" data-price="6000">6,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -66,8 +67,8 @@
                     <img src="../pictures/sandwich.jpg" class="card-image" alt="Sandwich">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Sandwich</span>
-                    <p class="card-description">Fast & Food</p>
+                    <span class="card-category" data-key="sandwich">Sandwich</span>
+                    <p class="card-description" data-key="sandwich.dec">Fast & Food</p>
                           <p class="card-price" data-price="4000">4,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -84,8 +85,8 @@
                     <img src="../pictures/pizza.jpg" class="card-image" alt="Pizza">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Pizza</span>
-                    <p class="card-description">Fast & Food</p>
+                    <span class="card-category"data-key="pizza">Pizza</span>
+                    <p class="card-description"data-key="pizza.dec">Fast & Food</p>
                             <p class="card-price" data-price="6500">6,500 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -102,8 +103,8 @@
                     <img src="../pictures/pasta.jpg" class="card-image" alt="Pasta">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Pasta</span>
-                    <p class="card-description">Fast & Food</p>
+                    <span class="card-category"data-key="pasta">Pasta</span>
+                    <p class="card-description"data-key="pasta.dec">Fast & Food</p>
                       <p class="card-price" data-price="5000">5,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -120,8 +121,8 @@
                     <img src="../pictures/hotdog.webp" class="card-image" alt="Hot Dog">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Hot Dog</span>
-                    <p class="card-description">Fast & Food</p>
+                    <span class="card-category"data-key="hot">Hot Dog</span>
+                    <p class="card-description"data-key="hot.dec">Fast & Food</p>
                         <p class="card-price" data-price="7500">7,500 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -138,8 +139,8 @@
                     <img src="../pictures/sushi.jpg" class="card-image" alt="sushi">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Sushi</span>
-                    <p class="card-description">Healthy & Food</p>
+                    <span class="card-category"data-key="sushi">Sushi</span>
+                    <p class="card-description"data-key="sushi.dec">Healthy & Food</p>
                      <p class="card-price" data-price="7000">7,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -156,8 +157,8 @@
                     <img src="../pictures/chiken.jpg" class="card-image" alt="chiken">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Chiken Wings</span>
-                    <p class="card-description">Fast & Food</p>
+                    <span class="card-category"data-key="chiken">Chiken Wings</span>
+                    <p class="card-description"data-key="chiken.dec">Fast & Food</p>
                    <p class="card-price" data-price="2500">2,500 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -174,8 +175,8 @@
                     <img src="../pictures/noodles.jpeg" class="card-image" alt="Noodles">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Noodles</span>
-                    <p class="card-description">Fast & Food</p>
+                    <span class="card-category"data-key="noodles">Noodles</span>
+                    <p class="card-description"data-key="noodles.dec">Fast & Food</p>
                  <p class="card-price" data-price="3000">3,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -192,8 +193,8 @@
                     <img src="../pictures/taco.png" class="card-image" alt="Taco">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Taco</span>
-                    <p class="card-description">Fast & Food</p>
+                    <span class="card-category"data-key="taco">Taco</span>
+                    <p class="card-description"data-key="taco.dec">Fast & Food</p>
                    <p class="card-price" data-price="5000">5,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -210,8 +211,8 @@
                     <img src="../pictures/salad.jpg" class="card-image" alt="salad">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Salad</span>
-                    <p class="card-description">Healthy Food</p>
+                    <span class="card-category"data-key="salad">Salad</span>
+                    <p class="card-description"data-key="salad.dec">Healthy Food</p>
                            <p class="card-price" data-price="2500">2,500 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -228,8 +229,8 @@
                     <img src="../pictures/potato.jpg" class="card-image" alt="potato">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Potato</span>
-                    <p class="card-description">Fast & Food</p>
+                    <span class="card-category"data-key="potato">Potato</span>
+                    <p class="card-description"data-key="potato.dec">Fast & Food</p>
                            <p class="card-price" data-price="6000">6,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -246,8 +247,8 @@
                     <img src="../pictures/rizzo.jpg" class="card-image" alt="Rizzo">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Rizzo</span>
-                    <p class="card-description">Fast & Food</p>
+                    <span class="card-category"data-key="rizzo">Rizzo</span>
+                    <p class="card-description"data-key="rizzo.dec">Fast & Food</p>
                             <p class="card-price" data-price="7000">7,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -264,39 +265,31 @@
     <!-- Second Hero Section -->
     <section class="hero2">
         <div class="hero2-content">
-            <h1>Handcrafted Perfection</h1>
-            <p>Each cup is carefully prepared by our skilled baristas using premium beans</p>
+            <h1 data-key="text">Handcrafted Perfection</h1>
         </div>
     </section>
 
-<!-- Food Philosophy Description -->
-<section class="coffee-types">
-    <div class="coffee-container">
-        <div class="coffee-text">
-            <h2>Our Culinary Commitment</h2>
-            <p>We passionately select seasonal ingredients from local farms and global artisans who share our values. Every recipe is crafted to celebrate authentic flavors while adding contemporary creativity. From our handcrafted appetizers to signature desserts, each dish tells a story of tradition and innovation.</p>
-            <p>Our kitchen team trains relentlessly to master both time-honored techniques and modern culinary arts, ensuring every creation meets our standards of excellence in flavor, presentation and hospitality.</p>
-        </div>
-    </div>
-</section>
 
-    <footer class="footer">
+<!-- Footer -->
+ <footer class="footer">
         <div class="footer-container">
             <div class="footer-hours">
-                <h3>Opening Hours</h3>
-                <p>Monday - Friday: 7am - 7pm</p>
-                <p>Saturday - Sunday: 8am - 6pm</p>
+                <h3 data-key="footer.hours">Opening Hours</h3>
+                <p data-key="footer.weekdays">Monday - Friday: 7am - 7pm</p>
+                <p data-key="footer.weekend">Saturday - Sunday: 8am - 6pm</p>
             </div>
-            <div class="footer-contact">
-                <h3>Visit Us</h3>
-                <p>123 Coffee Street</p>
-                <p>Brewville, BV 12345</p>
-                <p>(123) 456-7890</p>
-            </div>
+        <div class="footer-contact">
+            <h3 data-key="footer.visit">Visit Us</h3>
+            <p data-key="footer.address">123 Beverage Boulevard</p>
+            <p data-key="footer.city">Mixville, MX 12345</p>
+            <p data-key="footer.phone">(123) 456-7890</p>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2023 Brew & Bites. All rights reserved.</p>
-        </div>
-    </footer>
+    </div>
+    <div class="footer-bottom">
+        <p data-key="footer.copyright">&copy; 2023 Brew & Bites. All rights reserved.</p>
+    </div>
+</footer>
+
+
 </body>
 </html>
