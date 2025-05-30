@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brew & Bites | Premium Coffee Selection</title>
     <script src="../java scrip/java.js"></script>
+    <script src="../java scrip/translate.js"></script>
     <link rel="stylesheet" href="../css/drink.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap">
 </head>
@@ -31,15 +32,15 @@
 <!-- Hero Section -->
 <section class="hero">
     <div class="hero-content">
-        <h1>Artisan Drink Selection</h1>
-        <p>Discover 16 unique beverages crafted by our expert mixologists</p>
-        <a href="#drink-menu" class="btn-menu">Explore Our Drinks</a>
+        <h1 data-key="hero.title3">Artisan Drink Selection</h1>
+        <p data-key="hero.subtitle3">Discover 16 unique beverages crafted by our expert mixologists</p>
+        <a href="#drink-menu" class="btn-menu" data-key="explore">Explore Our Drinks</a>
     </div>
 </section>
 
 <!-- Drink Menu Grid -->
 <section id="drink-menu" class="menu-container">
-    <h2 class="section-title">Our Drink Collection</h2>
+    <h2 class="section-title" data-key="text2">Our Drink Collection</h2>
     <div class="menu-grid">
         <!-- Classic Tonic -->
         <div class="menu-card">
@@ -47,8 +48,8 @@
                 <img src="../pictures/tonic.jpg" class="card-image" alt="Classic Tonic">
             </div>
             <div class="card-content">
-                <span class="card-category">Classic Tonic</span>
-                <p class="card-description">Bold and aromatic refreshment</p>
+                <span class="card-category" data-key="dc">Classic Tonic</span>
+                <p class="card-description" data-key="dcd">Bold and aromatic refreshment</p>
                  <p class="card-price" data-price="6000">6,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -65,8 +66,8 @@
                 <img src="../pictures/redbul.jpg" class="card-image" alt="redbull">
             </div>
             <div class="card-content">
-                <span class="card-category">Red Bull</span>
-                <p class="card-description">Energy Drink</p>
+                <span class="card-category" data-key="dr">Red Bull</span>
+                <p class="card-description" data-key="drd">Energy Drink</p>
                        <p class="card-price" data-price="4000">4,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -83,8 +84,8 @@
                 <img src="../pictures/fizz.webp" class="card-image" alt="Cream Fizz">
             </div>
             <div class="card-content">
-                <span class="card-category">Cream Fizz</span>
-                <p class="card-description">A creamy delight with a fizzy twist</p>
+                <span class="card-category" data-key="df">Cream Fizz</span>
+                <p class="card-description" data-key="dfd">A creamy delight with a fizzy twist</p>
                        <p class="card-price" data-price="5000">5,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -101,8 +102,8 @@
                 <img src="../pictures/velvet.jpg" class="card-image" alt="Velvet Chill">
             </div>
             <div class="card-content">
-                <span class="card-category">Velvet Chill</span>
-                <p class="card-description">Smooth, cold, and irresistibly soft</p>
+                <span class="card-category" data-key="dv">Velvet Chill</span>
+                <p class="card-description" data-key="dvd">Smooth, cold, and irresistibly soft</p>
                       <p class="card-price" data-price="6500">6,500 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -119,8 +120,8 @@
                 <img src="../pictures/mist.jpg" class="card-image" alt="White Mist">
             </div>
             <div class="card-content">
-                <span class="card-category">White Mist</span>
-                <p class="card-description">Light and airy with subtle sweetness</p>
+                <span class="card-category" data-key="dw">White Mist</span>
+                <p class="card-description" data-key="dwd">Light and airy with subtle sweetness</p>
                       <p class="card-price" data-price="5000">5,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -137,8 +138,8 @@
                 <img src="../pictures/bliss.jpg" class="card-image" alt="Choco Bliss">
             </div>
             <div class="card-content">
-                <span class="card-category">Choco Bliss</span>
-                <p class="card-description">A rich blend of chocolate and cream</p>
+                <span class="card-category" data-key="db">Choco Bliss</span>
+                <p class="card-description" data-key="dbd">A rich blend of chocolate and cream</p>
                       <p class="card-price" data-price="7500">7,500 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -155,8 +156,8 @@
         <img src="../pictures/breeze.jpg" class="card-image" alt="Citrus Breeze">
     </div>
     <div class="card-content">
-        <span class="card-category">Citrus Breeze</span>
-        <p class="card-description">Clean, crisp, and citrus-infused delight</p>
+        <span class="card-category" data-key="dz">Citrus Breeze</span>
+        <p class="card-description" data-key="dzd">Clean, crisp, and citrus-infused delight</p>
                <p class="card-price" data-price="7000">7,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -173,8 +174,8 @@
         <img src="../pictures/pepsi.jpg" class="card-image" alt="pepsi">
     </div>
     <div class="card-content">
-        <span class="card-category">Pepsi</span>
-        <p class="card-description">Energy</p>
+        <span class="card-category" data-key="dp">Pepsi</span>
+        <p class="card-description" data-key="dpd">Energy</p>
            <p class="card-price" data-price="2500">2,500 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -191,8 +192,8 @@
         <img src="../pictures/lemon.webp" class="card-image" alt="lemon">
     </div>
     <div class="card-content">
-        <span class="card-category">Lemon Water</span>
-        <p class="card-description">Healthy Water</p>
+        <span class="card-category" data-key="dl">Lemon Water</span>
+        <p class="card-description" data-key="dld">Healthy Water</p>
            <p class="card-price" data-price="3000">3,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -209,8 +210,8 @@
         <img src="../pictures/chill.webp" class="card-image" alt="Berry Chill">
     </div>
     <div class="card-content">
-        <span class="card-category">Berry Chill</span>
-        <p class="card-description">Icy mix of strawberries and blueberries for a cool burst</p>
+        <span class="card-category" data-key="dy">Berry Chill</span>
+        <p class="card-description" data-key="dyd">Icy mix of strawberries and blueberries for a cool burst</p>
               <p class="card-price" data-price="5000">5,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -227,8 +228,8 @@
         <img src="../pictures/rose.jpg" class="card-image" alt="Rose Bloom">
     </div>
     <div class="card-content">
-        <span class="card-category">Rose Bloom</span>
-        <p class="card-description">Floral rose water blended with lychee and crushed ice</p>
+        <span class="card-category" data-key="do">Rose Bloom</span>
+        <p class="card-description" data-key="dod">Floral rose water blended with lychee and crushed ice</p>
               <p class="card-price" data-price="2500">2,500 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -242,11 +243,11 @@
 <!-- Tropical Cream -->
 <div class="menu-card">
     <div class="card-image-container">
-        <img src="../pictures/topical.jpg" class="card-image" alt="Tropical Cream">
+        <img src="../pictures/pipe.jpg" class="card-image" alt="Tropical Cream">
     </div>
     <div class="card-content">
-        <span class="card-category">Tropical Cream</span>
-        <p class="card-description">Pineapple and mango swirled with creamy coconut</p>
+        <span class="card-category" data-key="dt">Tropical Cream</span>
+        <p class="card-description" data-key="dtd">Pineapple and mango swirled with creamy coconut</p>
                <p class="card-price" data-price="6000">6,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -263,8 +264,8 @@
         <img src="../pictures/spic.webp" class="card-image" alt="Spiced Peach">
     </div>
     <div class="card-content">
-        <span class="card-category">Spiced Peach</span>
-        <p class="card-description">Chilled peach tea with a subtle spice twist</p>
+        <span class="card-category" data-key="ds">Spiced Peach</span>
+        <p class="card-description" data-key="dsd">Chilled peach tea with a subtle spice twist</p>
                <p class="card-price" data-price="4500">4,500 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -281,8 +282,8 @@
         <img src="../pictures/connn.webp" class="card-image" alt="Coconut Bliss">
     </div>
     <div class="card-content">
-        <span class="card-category">Coconut Bliss</span>
-        <p class="card-description">Fresh coconut water with lime and crushed mint</p>
+        <span class="card-category" data-key="df">Coconut Bliss</span>
+        <p class="card-description" data-key="dfd">Fresh coconut water with lime and crushed mint</p>
                <p class="card-price" data-price="4000">4,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -299,8 +300,8 @@
         <img src="../pictures/cit.png" class="card-image" alt="Citrus Fusion">
     </div>
     <div class="card-content">
-        <span class="card-category">Citrus Fusion</span>
-        <p class="card-description">Zesty orange, lemon, and grapefruit over ice</p>
+        <span class="card-category" data-key="de">Citrus Fusion</span>
+        <p class="card-description" data-key="ded">Zesty orange, lemon, and grapefruit over ice</p>
               <p class="card-price" data-price="5500">5,500 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -317,8 +318,8 @@
         <img src="../pictures/apple.webp" class="card-image" alt="apple">
     </div>
     <div class="card-content">
-        <span class="card-category">Green Apple</span>
-        <p class="card-description">Green Apple drink Water</p>
+        <span class="card-category" data-key="dg">Green Apple</span>
+        <p class="card-description" data-key="dgd">Green Apple drink Water</p>
               <p class="card-price" data-price="7000">7,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -335,39 +336,29 @@
 <!-- Second Hero Section -->
 <section class="hero2">
     <div class="hero2-content">
-        <h1>Handcrafted Perfection</h1>
-        <p>Each drink is carefully prepared by our skilled team using premium ingredients</p>
+        <h1 data-key="text">Handcrafted Perfection</h1>
     </div>
 </section>
 
-<!-- Beverage Philosophy Section -->
-<section class="coffee-types">
-    <div class="coffee-container">
-        <div class="coffee-text">
-            <h2>Our Beverage Craft</h2>
-            <p>We meticulously source premium teas, coffees, spirits and fresh ingredients to create an exceptional drink selection. Each beverage is carefully composed to balance distinctive flavors and deliver a perfect sip every time.</p>
-            <p>Our bar staff trains extensively in both traditional mixology and contemporary techniques, ensuring every drink - whether hot or cold, alcoholic or non-alcoholic - meets our exacting standards of quality and presentation.</p>
-        </div>
-    </div>
-</section>
+
 
 <!-- Footer -->
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-hours">
-            <h3>Opening Hours</h3>
-            <p>Monday - Friday: 7am - 7pm</p>
-            <p>Saturday - Sunday: 8am - 6pm</p>
-        </div>
+ <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-hours">
+                <h3 data-key="footer.hours">Opening Hours</h3>
+                <p data-key="footer.weekdays">Monday - Friday: 7am - 7pm</p>
+                <p data-key="footer.weekend">Saturday - Sunday: 8am - 6pm</p>
+            </div>
         <div class="footer-contact">
-            <h3>Visit Us</h3>
-            <p>123 Beverage Boulevard</p>
-            <p>Mixville, MX 12345</p>
-            <p>(123) 456-7890</p>
+            <h3 data-key="footer.visit">Visit Us</h3>
+            <p data-key="footer.address">123 Beverage Boulevard</p>
+            <p data-key="footer.city">Mixville, MX 12345</p>
+            <p data-key="footer.phone">(123) 456-7890</p>
         </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; 2023 Brew & Bites. All rights reserved.</p>
+        <p data-key="footer.copyright">&copy; 2023 Brew & Bites. All rights reserved.</p>
     </div>
 </footer>
 
