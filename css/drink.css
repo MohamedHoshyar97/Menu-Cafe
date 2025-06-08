@@ -31,7 +31,7 @@
             text-align: center;
             color: white;
             padding: 0 20px;
-            box-shadow: 1px 10px 15px 3px rgba(0, 0, 0, 0.5);
+           
         }
         
         .hero2 {
@@ -218,14 +218,15 @@
 
 
 
-        /* Coffee Types Section */
-        .coffee-types {
+        /* drink Types Section */
+        .drink-types {
             background-color: white;
             padding: 40px 15px;
             margin-top: 40px;
+            box-shadow: 12px 13px 20px -5px rgba(0,0,0,0.1);
         }
         
-        .coffee-container {
+        .drink-container {
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
@@ -233,16 +234,16 @@
             gap: 30px;
         }
         
-        .coffee-text h2 {
+        .drink-text h2 {
             font-family: 'Playfair Display', serif;
             font-size: 1.8rem;
-            color: var(--dark);
+            color: #07b7c1;
             margin-bottom: 1.2rem;
             text-align: center;
         }
         
-        .coffee-text p {
-            color: var(--text-light);
+        .drink-text p {
+            color: #166a70;
             margin-bottom: 1.2rem;
             line-height: 1.6;
             text-align: center;

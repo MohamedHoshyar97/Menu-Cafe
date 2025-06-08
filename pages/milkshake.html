@@ -6,17 +6,16 @@
     <title>Shake It Up | Premium Milkshake Selection</title>
     <link rel="stylesheet" href="../css/milkshake.css">
     <script src="../java scrip/java.js"></script>
+     <script src="../java scrip/translate.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap">
 
 </head>
 <body>
 
-        <!-- Add this cart icon at the top of the body -->
-<div class="cart-icon" onclick="toggleCart()">
+        <div class="cart-icon" onclick="toggleCart()">
     🛒 <span class="cart-count">0</span>
 </div>
 
-<!-- Add this cart sidebar -->
 <div class="cart-sidebar">
     <div class="cart-header">
         <h3>Your Order</h3>
@@ -29,27 +28,24 @@
 </div>
 
 
-<!-- Hero Section -->
-    <section class="hero">
+<section class="hero">
         <div class="hero-content">
-            <h1>Milkshake Paradise</h1>
-            <p>Discover 16 heavenly milkshake flavors crafted with premium ingredients</p>
-            <a href="#shake-menu" class="btn-menu">Explore Our Shakes</a>
+            <h1 data-key="hero.title5">Milkshake Paradise</h1>
+            <p data-key="hero.subtitle5">Discover 16 heavenly milkshake flavors crafted with premium ingredients</p>
+            <a href="#shake-menu" class="btn-menu" data-key="explore4">Explore Our Shakes</a>
         </div>
     </section>
 
-    <!-- Milkshake Menu Grid -->
     <section id="shake-menu" class="menu-container">
-        <h2 class="section-title">Our Signature Shakes</h2>
+        <h2 class="section-title" data-key="text3">Our Signature Shakes</h2>
         <div class="menu-grid">
-            <!-- Classic Chocolate -->
             <div class="menu-card">
                 <div class="card-image-container">
                     <img src="../pictures/classic.jpg" class="card-image" alt="Classic Chocolate Shake">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Chocolate</span>
-                    <p class="card-description">Rich chocolate flavor with whipped cream</p>
+                    <span class="card-category" data-key="shake.chocolate">Chocolate</span>
+                    <p class="card-description" data-key="shake.chocolate.dec">Rich chocolate flavor with whipped cream</p>
                      <p class="card-price" data-price="6000">6,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -60,14 +56,13 @@
                 </div>
             </div>
             
-            <!-- Oreo Crunch -->
             <div class="menu-card">
                 <div class="card-image-container">
                     <img src="../pictures/oreo.jpg" class="card-image" alt="Oreo Shake">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Oreo</span>
-                    <p class="card-description">Creamy vanilla with crushed Oreo cookies</p>
+                    <span class="card-category" data-key="shake.oreo">Oreo</span>
+                    <p class="card-description" data-key="shake.oreo.dec">Creamy vanilla with crushed Oreo cookies</p>
                                      <p class="card-price" data-price="6000">6,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -78,14 +73,13 @@
                 </div>
             </div>
             
-            <!-- Nutella Dream -->
             <div class="menu-card">
                 <div class="card-image-container">
                     <img src="../pictures/haz.jpg" class="card-image" alt="Nutella Shake">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Hazelnut</span>
-                    <p class="card-description">Silky Nutella blended with vanilla ice cream</p>
+                    <span class="card-category" data-key="shake.hazelnut">Hazelnut</span>
+                    <p class="card-description" data-key="shake.hazelnut.dec">Silky Nutella blended with vanilla ice cream</p>
                                       <p class="card-price" data-price="4000">4,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -96,14 +90,13 @@
                 </div>
             </div>
             
-            <!-- Strawberry Fields -->
             <div class="menu-card">
                 <div class="card-image-container">
                     <img src="../pictures/fruit.jpg" class="card-image" alt="Strawberry Shake">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Fruit</span>
-                    <p class="card-description">Fresh strawberries blended to perfection</p>
+                    <span class="card-category" data-key="shake.fruit">Fruit</span>
+                    <p class="card-description" data-key="shake.fruit.dec">Fresh strawberries blended to perfection</p>
                                          <p class="card-price" data-price="5000">5,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -114,14 +107,13 @@
                 </div>
             </div>
             
-            <!-- Banana Split -->
             <div class="menu-card">
                 <div class="card-image-container">
                     <img src="../pictures/banana.jpg" class="card-image" alt="Banana Shake">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Banana</span>
-                    <p class="card-description">Banana, chocolate, and strawberry combo</p>
+                    <span class="card-category" data-key="shake.banana">Banana</span>
+                    <p class="card-description" data-key="shake.banana.dec">Banana, chocolate, and strawberry combo</p>
                                      <p class="card-price" data-price="6500">6,500 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -132,14 +124,13 @@
                 </div>
             </div>
 
-            <!-- Mango Tango -->
             <div class="menu-card">
                 <div class="card-image-container">
                     <img src="../pictures/mango.jpg" class="card-image" alt="Mango Shake">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Tropical</span>
-                    <p class="card-description">Sweet mango with a hint of lime</p>
+                    <span class="card-category" data-key="shake.tropical">Tropical</span>
+                    <p class="card-description" data-key="shake.tropical.dec">Sweet mango with a hint of lime</p>
                                   <p class="card-price" data-price="5000">5,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -150,14 +141,13 @@
                 </div>
             </div>
 
-            <!-- Cookies & Cream -->
             <div class="menu-card">
                 <div class="card-image-container">
                     <img src="../pictures/nutellaa.jpg" class="card-image" alt="Cookies & Cream">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Nutella</span>
-                    <p class="card-description">Vanilla ice cream with Nutella </p>
+                    <span class="card-category" data-key="shake.nutella">Nutella</span>
+                    <p class="card-description" data-key="shake.nutella.dec">Vanilla ice cream with Nutella </p>
                       <p class="card-price" data-price="7500">7,500 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -168,14 +158,13 @@
                 </div>
             </div>
 
-            <!-- Peanut Butter Cup -->
             <div class="menu-card">
                 <div class="card-image-container">
                     <img src="../pictures/cup.jpg" class="card-image" alt="Peanut Butter Shake">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Nutty</span>
-                    <p class="card-description">Creamy peanut butter with chocolate</p>
+                    <span class="card-category" data-key="shake.nutty">Nutty</span>
+                    <p class="card-description" data-key="shake.nutty.dec">Creamy peanut butter with chocolate</p>
                            <p class="card-price" data-price="7000">7,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -187,14 +176,13 @@
             </div>
 
             
-            <!-- Blueberry Bliss -->
             <div class="menu-card">
                 <div class="card-image-container">
                     <img src="../pictures/blue.jpg" class="card-image" alt="Blueberry Shake">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Berry</span>
-                    <p class="card-description">Antioxidant-rich blueberry delight</p>
+                    <span class="card-category" data-key="shake.berry">Berry</span>
+                    <p class="card-description" data-key="shake.berry.dec">Antioxidant-rich blueberry delight</p>
                          <p class="card-price" data-price="2500">2,500 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -205,14 +193,13 @@
                 </div>
             </div>
             
-            <!-- Coconut Dream -->
             <div class="menu-card">
                 <div class="card-image-container">
                     <img src="../pictures/conc.avif" class="card-image" alt="Coconut Shake">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Tropical</span>
-                    <p class="card-description">Creamy coconut with pineapple notes</p>
+                    <span class="card-category" data-key="shake.coconut">Tropical</span>
+                    <p class="card-description" data-key="shake.coconut.dec">Creamy coconut with pineapple notes</p>
                            <p class="card-price" data-price="3000">3,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -224,14 +211,13 @@
             </div>
 
             
-            <!-- Vanilla Bean -->
             <div class="menu-card">
                 <div class="card-image-container">
                     <img src="../pictures/vanilla.jpg" class="card-image" alt="Vanilla Shake">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Vanilla</span>
-                    <p class="card-description">Pure Madagascar vanilla flavor</p>
+                    <span class="card-category" data-key="shake.vanilla">Vanilla</span>
+                    <p class="card-description" data-key="shake.vanilla.dec">Pure Madagascar vanilla flavor</p>
                              <p class="card-price" data-price="5000">5,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -242,14 +228,13 @@
                 </div>
             </div>
             
-            <!-- Coffee Buzz -->
             <div class="menu-card">
                 <div class="card-image-container">
                     <img src="../pictures/cofemilk.webp" class="card-image" alt="Coffee Shake">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Caffeinated</span>
-                    <p class="card-description">Espresso blended with vanilla ice cream</p>
+                    <span class="card-category" data-key="shake.coffee">Caffeinated</span>
+                    <p class="card-description" data-key="shake.coffee.dec">Espresso blended with vanilla ice cream</p>
                                   <p class="card-price" data-price="2500">2,500 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -262,21 +247,19 @@
         </div>
     </section>
 
-    <!-- Second Hero Section -->
     <section class="hero2">
         <div class="hero2-content">
-            <h1>Handcrafted Perfection</h1>
-            <p>Each milkshake is carefully prepared with premium ingredients and love</p>
+            <h1 data-key="text4">Handcrafted Perfection</h1>
+            <p data-key="text5">Each milkshake is carefully prepared with premium ingredients and love</p>
         </div>
     </section>
 
-<!-- Shake Philosophy Description -->
 <section class="coffee-types">
     <div class="coffee-container">
         <div class="coffee-text">
-            <h2>Our Shake Commitment</h2>
-            <p>We passionately select the finest dairy, fruits, and premium ingredients to create our signature shakes. Every recipe is crafted to celebrate authentic flavors while adding creative twists. From our classic vanilla to innovative flavor combinations, each shake delivers pure indulgence.</p>
-            <p>Our team trains relentlessly to perfect blending techniques and presentation, ensuring every shake meets our standards of excellence in taste, texture and visual appeal.</p>
+            <h2 data-key="shake.commitment.title">Our Shake Commitment</h2>
+            <p data-key="shake.commitment.p1">We passionately select the finest dairy, fruits, and premium ingredients to create our signature shakes. Every recipe is crafted to celebrate authentic flavors while adding creative twists. From our classic vanilla to innovative flavor combinations, each shake delivers pure indulgence.</p>
+            <p data-key="shake.commitment.p2">Our team trains relentlessly to perfect blending techniques and presentation, ensuring every shake meets our standards of excellence in taste, texture and visual appeal.</p>
         </div>
     </div>
 </section>
@@ -284,19 +267,19 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-hours">
-                <h3>Opening Hours</h3>
-                <p>Monday - Friday: 10am - 10pm</p>
-                <p>Saturday - Sunday: 11am - 11pm</p>
+                <h3 data-key="footer.hours">Opening Hours</h3>
+                <p data-key="footer.weekdays">Monday - Friday: 10am - 10pm</p>
+                <p data-key="footer.weekend">Saturday - Sunday: 11am - 11pm</p>
             </div>
             <div class="footer-contact">
-                <h3>Visit Us</h3>
-                <p>123 Shake Street</p>
-                <p>Milkshake City, MS 12345</p>
-                <p>(123) 456-7890</p>
+                <h3 data-key="footer.visit">Visit Us</h3>
+                <p data-key="footer.address">123 Shake Street</p>
+                <p data-key="footer.city">Milkshake City, MS 12345</p>
+                <p data-key="footer.phone">(123) 456-7890</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2023 Shake It Up. All rights reserved.</p>
+            <p data-key="footer.copyright2">&copy; 2023 Shake It Up. All rights reserved.</p>
         </div>
     </footer>
 </body>
