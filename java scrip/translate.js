@@ -36,7 +36,7 @@ const translations = {
 
         ////coffe Translate
         "hero.title2": "هەڵبژاردەی قاوە جیهانییەکان",
-        "hero.subtitle2":"١٦ جۆری قاوەی جۆراو جۆر و تایبەت و هەمەڕەنگ دەتوانی تاقیبکەیتەوە ",
+        "hero.subtitle2":"قاوەی تایبەت و هەمەڕەنگ دەتوانی تاقیبکەیتەوە ",
 
         "coffee.espresso.name": "ئەسپرسۆ",
         "coffee.espresso.desc": "شۆتیەکی توند و بۆنەدار",
