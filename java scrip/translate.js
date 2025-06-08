@@ -6,8 +6,8 @@ const translations = {
     ku: {    
 
         ////Index Translate
-        "meta.title": "برو و بایتس | کافێی کارەسەنگ",
-        "hero.title": "بەخێربێن بۆ برو و بایتس",
+        "meta.title": "کریس & کافێ",
+        "hero.title": "بەخێربێن بۆ کریس & کافێ",
         "hero.subtitle": "فێری قاوەی کارەسەنگ و خواردنە دەستکاریکراوەکان لە جێگەیەکی گەرمدا ببە",
         "menu.view": "بینینی مینو",
         "menu.coffee": "قاوە",
@@ -249,8 +249,8 @@ const translations = {
     ar: {
 
          ////Index Translate
-        "meta.title": "برو آند بايتس | مقهى الحرفيين",
-        "hero.title": "مرحبًا بكم في برو آند بايتس",
+        "meta.title": "کریس & کافی",
+        "hero.title": "مرحبًا بكم في کریس & کافی",
         "hero.subtitle": "اكتشف قهوتنا الحرفية ووجباتنا المصنوعة يدويًا في أجواء دافئة",
         "menu.view": "عرض القائمة",
         "menu.coffee": "قهوة",
@@ -519,8 +519,8 @@ const translations = {
     en: {
 
          ////Index Translate
-        "meta.title": "Brew & Bites | Artisan Cafe",
-        "hero.title": "Welcome to Brew & Bites",
+        "meta.title": "Kris & Cafe",
+        "hero.title": "Welcome to Kris & Cafe",
         "hero.subtitle": "Discover our artisan coffee and handcrafted meals in a cozy atmosphere",
         "menu.view": "View Menu",
         "menu.coffee": "Coffee",
