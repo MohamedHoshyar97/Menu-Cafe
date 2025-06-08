@@ -48,7 +48,7 @@
             color: white;
             padding: 0 20px;
             margin-top: 50px;
-              box-shadow: 1px 10px 15px 3px rgba(0, 0, 0, 0.5);
+             box-shadow: 1px 1px 7px 2px rgba(0, 0, 0, 0.5);
         }
         
          .hero-content h1, .hero2-content h1 {
@@ -117,7 +117,7 @@
         }
         
         .menu-card:hover {
-            transform: translateY(-5px);
+          
             box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
         
@@ -218,14 +218,15 @@
 
 
 
-        /* Coffee Types Section */
-        .coffee-types {
+        /* food Types Section */
+        .food-types {
             background-color: white;
             padding: 40px 15px;
             margin-top: 40px;
+              box-shadow: 1px 1px 7px 2px rgba(0, 0, 0, 0.5);
         }
         
-        .coffee-container {
+        .food-container {
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
@@ -233,16 +234,16 @@
             gap: 30px;
         }
         
-        .coffee-text h2 {
+        .food-text h2 {
             font-family: 'Playfair Display', serif;
             font-size: 1.8rem;
-            color: var(--dark);
+            color: #f6a12c;
             margin-bottom: 1.2rem;
             text-align: center;
         }
         
-        .coffee-text p {
-            color: var(--text-light);
+        .food-text p {
+            color: #965903;
             margin-bottom: 1.2rem;
             line-height: 1.6;
             text-align: center;

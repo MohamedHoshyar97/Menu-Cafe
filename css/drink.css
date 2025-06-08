@@ -47,7 +47,7 @@
             color: white;
             padding: 0 20px;
             margin-top: 50px;
-             box-shadow: 1px 10px 15px 3px rgba(0, 0, 0, 0.5);
+              box-shadow: 1px 1px 7px 2px rgba(0, 0, 0, 0.5);
         }
         
         .hero-content h1, .hero2-content h1 {
@@ -116,7 +116,7 @@
         }
         
         .menu-card:hover {
-            transform: translateY(-5px);
+            
             box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
         
@@ -223,7 +223,7 @@
             background-color: white;
             padding: 40px 15px;
             margin-top: 40px;
-            box-shadow: 12px 13px 20px -5px rgba(0,0,0,0.1);
+              box-shadow: 1px 1px 7px 2px rgba(0, 0, 0, 0.5);
         }
         
         .drink-container {

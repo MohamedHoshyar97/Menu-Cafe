@@ -195,6 +195,11 @@ const translations = {
         "text":"تامێکی نایاب",
         "explore4":"بینینی خواردنەکان",
         "text3":"بینینی لیستی بەرهەم",
+        "below-title3": "پەیمانی خواردنەکانی ئێمە",
+        "below-text3": [
+            "ئێمە بە وردی باشترین پێکهاتەکان هەڵدەبژێرین بۆ ئامادەکردنی خواردنە تایبەتەکانی ئێمە. هەر رەچەتەیەک تامی رەسەن لەگەڵ پیشاندانێکی داهێنەرانە تێکەڵ دەکات. لە بەرگەرە کلاسیکەوە تا داهێنانی چێشتلێنانی نوێ، هەموو ژەمێک ئاسودەییێکی بەتام پێشکەش دەکات.",
+            "چێشتلێنەرەکانمان بەردەوام باشتر دەبن لە تەکنیکی چێشتلێنان، دڵنیادەبنەوە لەوەی کە هەر خواردنێک پێوەرە بەرزەکانی ئێمە بۆ تام، جۆرەوەری و پیشاندانی جوانی پێشکەش دەکات."
+        ],
 
 
 
@@ -443,6 +448,11 @@ const translations = {
 
         "rizzo": "ريزو",  
         "rizzo.dec": "وجبة سريعة ولذيذة"  ,
+        "below-title3": "التزامنا تجاه الطعام",
+        "below-text3": [
+            "نختار بعناية أفضل المكونات لإعداد أطباقنا المميزة. كل وصفة تجمع بين النكهات الأصيله وعرض إبداعي. من البرغر الكلاسيكي إلى الابتكارات الطهوية المبتكرة، كل وجبة تقدم إشباعاً لذيذاً.",
+            "يطور طهاة باستمرار تقنيات الطهي، مما يضمن أن كل طبق يفي بمعاييرنا العالية للطعم والجودة والجاذبية البصرية."
+        ],
 
 
 
@@ -533,64 +543,7 @@ const translations = {
         "footer.city": "Brewville, BV 12345",
         "footer.phone": "(123) 456-7890",
         "footer.copyright": "&copy; 2023 Brew & Bites. All rights reserved.",
-
-
-
-
-        ////coffe Translate
-        "hero.title2": "Artisan Coffee Selection",
-"hero.subtitle2": "Discover 16 premium coffee experiences crafted by our master baristas",
-
-"coffee.espresso.name": "Espresso",
-"coffee.espresso.desc": "Intense and aromatic single shot",
-
-"coffee.double.name": "Double Espresso",
-"coffee.double.desc": "Twice the intensity, twice the pleasure",
-
-"coffee.cappuccino.name": "Cappuccino",
-"coffee.cappuccino.desc": "Perfect espresso, milk and foam balance",
-
-"coffee.latte.name": "Latte",
-"coffee.latte.desc": "Smooth espresso with velvety milk",
-
-"coffee.flatwhite.name": "Flat White",
-"coffee.flatwhite.desc": "Microfoam over rich espresso",
-
-"coffee.mocha.name": "Mocha",
-"coffee.mocha.desc": "Espresso with chocolate indulgence",
-
-"coffee.americano.name": "Americano",
-"coffee.americano.desc": "Espresso lengthened with hot water",
-
-"coffee.macchiato.name": "Macchiato",
-"coffee.macchiato.desc": "Espresso \"stained\" with milk foam",
-
-"coffee.cortado.name": "Cortado",
-"coffee.cortado.desc": "Equal parts espresso and warm milk",
-
-"coffee.coldbrew.name": "Cold Brew",
-"coffee.coldbrew.desc": "Slow-steeped for 18 hours",
-
-"coffee.icedlatte.name": "Iced Latte",
-"coffee.icedlatte.desc": "Chilled espresso with cold milk and ice",
-
-"coffee.affogato.name": "Affogato",
-"coffee.affogato.desc": "Vanilla ice cream drowned in hot espresso",
-
-"coffee.turkish.name": "Turkish Coffee",
-"coffee.turkish.desc": "Traditional unfiltered coffee with cardamom",
-
-"coffee.vietnamese.name": "Vietnamese Iced Coffee",
-"coffee.vietnamese.desc": "Sweetened condensed milk with strong coffee over ice",
-
-"coffee.pourover.name": "Pour Over",
-"coffee.pourover.desc": "Handcrafted single-origin coffee",
-
-"coffee.frenchpress.name": "French Press",
-"coffee.frenchpress.desc": "Full-bodied immersion brew"
-
-    },
-}
+}}
 function setLanguage(lang) {
     localStorage.setItem("selectedLanguage", lang);
     translatePage(lang);

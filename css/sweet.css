@@ -46,6 +46,7 @@
             color: white;
             padding: 0 20px;
             margin-top: 50px;
+             box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.5);
         }
         
         .hero-content h1, .hero2-content h1 {
@@ -114,7 +115,7 @@
         }
         
         .menu-card:hover {
-            transform: translateY(-5px);
+          
             box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
         
