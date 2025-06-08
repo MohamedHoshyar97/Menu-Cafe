@@ -284,7 +284,7 @@ const translations = {
 
         ////coffe Translate
         "hero.title2": "اختيار القهوة العالمية",  
-"hero.subtitle2": "اكتشف ١٦ تجربة قهوة فاخرة من إعداد خبرائنا",
+"hero.subtitle2": "يمكنك تجربة القهوة مميزة ومتنوعة",
 
 "coffee.espresso.name": "إسبريسو",
 "coffee.espresso.desc": "قهوة مركزة وعطرية بطلقة واحدة",
