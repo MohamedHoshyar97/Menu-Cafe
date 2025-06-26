@@ -208,7 +208,7 @@ const translations = {
         "hero.title5": "هەڵبژاردەی شەیکە جیهانییەکان",
         "hero.subtitle5": "مێڵك شەیکی تایبەت و هەمەڕەنگ دەتوانی تاقیبکەیتەوە ",
         "text":"تامێکی نایاب",
-        "explore":"بینینی خواردنەوەکان",
+        "explore":"بینینی شەیکەکان",
         "text2":"بینینی لیستی بەرهەم",
         
         "shake.chocolate": "چۆکلێت",
@@ -240,6 +240,58 @@ const translations = {
             "ئێمە بە وردی باشترین پێکهاتەکان هەڵدەبژێرین بۆ دروستکردنی شەیکە تایبەتەکانی ئێمە. هەر رەچەتەیەک تامی رەسەن لەگەڵ دەستکاری نوێ تێکەڵ دەکات. لە چۆکلێتی کلاسیکییەوە تا تێکەڵەی نوێی شەیک، هەر شەیکێک ئاسودەییێکی نوێ پێشکەش دەکات.",
             "تیمەکەمان بەردەوام باشتر دەبن لە تەکنیکی تێکەڵکردن و پیشاندان، دڵنیادەن لەوەی کە هەر شەیکێک پێوەر بەرزەکانی ئێمە بۆ تام، جۆر و پیشاندانی جوانی پێشکەش دەکات."
         ],
+
+
+
+          // Sweet Page Translations
+      
+        "sweet.hero.title": "هەڵبژاردەی شیرینییە جیهانییەکان",
+        "sweet.hero.subtitle": "شیرینی تایبەت و هەمەڕەنگ دەتوانی تاقیبکەیتەوە ",
+        "sweet.hero.explore": "بینینی شیرینییەکان",
+        "sweet.menu.title": "بینینی لیستی بەرهەم",
+        
+        // Dessert items
+        "dessert.crepe.category": "کرێپ",
+        "dessert.crepe.desc": "کرێپی نەرم بە نوتێلا و توتفرێنگی تازە",
+        "dessert.lava.category": "کێک",
+        "dessert.lava.desc": "کێکی گەرمی چۆکلێت بە ئایسکریمی ڤانیلا",
+        "dessert.donut.category": "دۆنات",
+        "dessert.donut.desc": "دۆناتی تایبەت بە نوتێلا و فەندق",
+        "dessert.tiramisu.category": "کلاسیک",
+        "dessert.tiramisu.desc": "شیرینی ئیتالی بە قاوە و کرێم",
+        "dessert.redvelvet.category": "کێک",
+        "dessert.redvelvet.desc": "کێکی سەوزە سوور بە کرێمی پەنیر",
+        "dessert.macarons.category": "فەڕەنسی",
+        "dessert.macarons.desc": "ماکارۆنی فەڕەنسی بە ھەموو جۆرە تامەکان",
+        "dessert.cheesecake.category": "کلاسیک",
+        "dessert.cheesecake.desc": "چیزکێکی نیویۆرک بە میوە",
+        "dessert.fondue.category": "ھاوبەشی",
+        "dessert.fondue.desc": "چۆکلێتی تواناو بە میوە و پساوە",
+        "dessert.mousse.category": "کلاسیک",
+        "dessert.mousse.desc": "موسێکی چۆکلێت بە کرێمی لوتکە",
+        "dessert.pancakes.category": "نوتێلا",
+        "dessert.pancakes.desc": "پانکێک بە نوتێلا و مۆزی تازە",
+        "dessert.souffle.category": "سوفلێی چۆکلێت",
+        "dessert.souffle.desc": "سوفلێی چۆکلێتی نەرم",
+        "dessert.waffles.category": "وافڵی بەلجیکی",
+        "dessert.waffles.desc": "وافڵی پوخت بە نوتێلا و توتفرێنگ",
+        
+        "sweet.hero2.title": "دەستکاری شیرینی",
+        "sweet.hero2.subtitle": "ھەر شیرینییەک بە پێکھاتەی بەرز دروست دەکرێت",
+        
+        "sweet.commitment.title": "پەیمانی شیرینییەکانمان",
+        "sweet.commitment.para1": "باشترین پێکھاتەکان لە سەرانسەری جیھان ھەڵدەبژێرین بۆ دروستکردنی شیرینی تایبەتەکانمان. ھەر رەچەتەیەک بۆ خۆشکردنی تامی رەسەن دروست دەکرێت لەگەڵ تێکەڵکردنی بیرۆکەی نوێ.",
+        "sweet.commitment.para2": "چێشتلێنەرەکانمان بەردەوام ڕاهێنان دەکەن بۆ باشترکردنی تەکنیک و پیشاندان، دڵنیابوونەوە لەوەی کە ھەر شیرینییەک پێوەرە بەرزەکانی ئێمە بۆ تام و شێواز پێشکەش دەکات.",
+        
+        "sweet.footer.hours": "کاتەکانی کراوەبوون",
+        "sweet.footer.weekdays": "دووشەممە - ھەینی: ٨ی بەیانی - ١٠ی ئێوارە",
+        "sweet.footer.weekend": "شەممە - یەکشەممە: ٩ی بەیانی - ١١ی ئێوارە",
+        "sweet.footer.visit": "سەردانمان بکە",
+        "sweet.footer.address": "١٢٣ شەقامی شیرینی",
+        "sweet.footer.city": "شاری شیرینی، DV 12345",
+        "sweet.footer.phone": "(١٢٣) ٤٥٦-٧٨٩٠",
+        "sweet.footer.copyright": "&copy; ٢٠٢٣ شیرینی خۆشەویستەکان. ھەموو مافەکان پارێزراون.",
+    
         
         // Footer
         "footer.hours": "کاتەکانی کردنەوە",
@@ -502,6 +554,57 @@ const translations = {
             "يعمل فريقنا بلا كلل لتحسين تقنيات الخلط والعرض، مما يضمن أن كل ميلك شيك يفي بمعاييرنا العالية للطعم والجودة والجاذبية البصرية."
         ],
         
+
+        // Sweet Page Translations
+        "cart.title": "طلبك",
+        "cart.total": "المجموع",
+        "sweet.hero.title": "اختيار حلویات العالمية",  
+        "sweet.hero.subtitle":  "يمكنك تجربة حلویات مميزة ومتنوعة",
+        "sweet.hero.explore": "استكشف حلوانا",
+        "sweet.menu.title": "عرض قائمة المنتجات",
+        
+        // Dessert items
+        "dessert.crepe.category": "كراب",
+        "dessert.crepe.desc": "كراب ناعم مع نوتيلا وفراولة طازجة",
+        "dessert.lava.category": "كيك",
+        "dessert.lava.desc": "كيك شوكولاتة دافئ مع آيس كريم فانيليا",
+        "dessert.donut.category": "دونات",
+        "dessert.donut.desc": "دونات حرفي بحشوة نوتيلا وبندق مقطع",
+        "dessert.tiramisu.category": "كلاسيكي",
+        "dessert.tiramisu.desc": "حلوى إيطالية تقليدية مع أصابع الليدي فنجر المنقوعة بالقهوة",
+        "dessert.redvelvet.category": "كيك",
+        "dessert.redvelvet.desc": "طبقات ريد فيلفيت رطبة مع صقيل جبنة الكريمة",
+        "dessert.macarons.category": "فرنسي",
+        "dessert.macarons.desc": "تشكيلة من ماكرون الفرنسي اللطيف بنكهات متنوعة",
+        "dessert.cheesecake.category": "كلاسيكي",
+        "dessert.cheesecake.desc": "تشيز كيك على طريقة نيويورك مع كومبوت التوت",
+        "dessert.fondue.category": "للمشاركة",
+        "dessert.fondue.desc": "شوكولاتة غنية مذابة مع فواكه ومعجنات للغمس",
+        "dessert.mousse.category": "كلاسيكي",
+        "dessert.mousse.desc": "موس شوكولاتة داكنة خفيفة وهواء مع كريمة مخفوقة",
+        "dessert.pancakes.category": "نوتيلا",
+        "dessert.pancakes.desc": "بان كيك رقيق مع نوتيلا وموز طازج",
+        "dessert.souffle.category": "سوفلي الشوكولاتة",
+        "dessert.souffle.desc": "سوفلي شوكولاتة خفيف مع مركز ذائب",
+        "dessert.waffles.category": "وافل بلجيكي",
+        "dessert.waffles.desc": "وافل مقرمش مع نوتيلا وفراولة وكريمة مخفوقة",
+        
+        "sweet.hero2.title": "إبداعات حلوة حرفية",
+        "sweet.hero2.subtitle": "كل حلوى تعد بعناية بمكونات ممتازة وشغف",
+        
+        "sweet.commitment.title": "التزامنا الحلو",
+        "sweet.commitment.para1": "نختار بشغف أفضل المكونات من حول العالم لصنع حلوانا المميزة. كل وصفة مصممة للاحتفاء بالنكهات الأصيلة مع إضافات عصرية مبتكرة.",
+        "sweet.commitment.para2": "يطور طهاة الحلويات لدينا باستمرار تقنياتهم وعروضهم، مما يضمن أن كل حلوى تلبي معاييرنا العالية للطعم والملمس والجاذبية البصرية.",
+        
+        "sweet.footer.hours": "ساعات العمل",
+        "sweet.footer.weekdays": "الإثنين - الجمعة: 8 صباحاً - 10 مساءً",
+        "sweet.footer.weekend": "السبت - الأحد: 9 صباحاً - 11 مساءً",
+        "sweet.footer.visit": "زورونا",
+        "sweet.footer.address": "123 شارع الحلويات",
+        "sweet.footer.city": "وادي الحلويات، DV 12345",
+        "sweet.footer.phone": "(123) 456-7890",
+        "sweet.footer.copyright": "&copy; 2023 متع حلوة. جميع الحقوق محفوظة.",
+    
         // Footer
         "footer.hours": "ساعات العمل",
         "footer.weekdays": "الإثنين - الجمعة: 10 صباحًا - 10 مساءً",
@@ -513,16 +616,6 @@ const translations = {
         "footer.copyright2": "© 2023 شيك إت أب. جميع الحقوق محفوظة."
 
     },
-
-
-
-
-
-
-
-
-
-
 
 
 

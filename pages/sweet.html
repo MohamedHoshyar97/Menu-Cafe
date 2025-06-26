@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sweet Delights | Premium Dessert Selection</title>
       <script src="../java scrip/java.js"></script>
+    <script src="../java scrip/translate.js"></script>
       <link rel="stylesheet" href="../css/sweet.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap">
    
 </head>
 <body>
-
     
         <!-- Add this cart icon at the top of the body -->
 <div class="cart-icon" onclick="toggleCart()">
@@ -20,12 +20,12 @@
 <!-- Add this cart sidebar -->
 <div class="cart-sidebar">
     <div class="cart-header">
-        <h3>Your Order</h3>
+        <h3 data-key="cart.title">Your Order</h3>
         <button class="close-cart" onclick="toggleCart()">&times;</button>
     </div>
     <div class="cart-items"></div>
     <div class="cart-total">
-        Total: <span id="cart-total-price">0 IQD</span>
+        <span data-key="cart.total">Total:</span> <span id="cart-total-price">0 IQD</span>
     </div>
   
 </div>
@@ -34,15 +34,15 @@
 <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Sweet Indulgence</h1>
-            <p>Discover 12 heavenly desserts crafted with premium ingredients</p>
-            <a href="#dessert-menu" class="btn-menu">Explore Our Treats</a>
+            <h1 data-key="sweet.hero.title">Sweet Indulgence</h1>
+            <p data-key="sweet.hero.subtitle">Discover 12 heavenly desserts crafted with premium ingredients</p>
+            <a href="#dessert-menu" class="btn-menu" data-key="sweet.hero.explore">Explore Our Treats</a>
         </div>
     </section>
 
     <!-- Dessert Menu Grid -->
     <section id="dessert-menu" class="menu-container">
-        <h2 class="section-title">Our Signature Desserts</h2>
+        <h2 class="section-title" data-key="sweet.menu.title">Our Signature Desserts</h2>
         <div class="menu-grid">
             <!-- Nutella Crepe -->
             <div class="menu-card">
@@ -50,8 +50,8 @@
                     <img src="../pictures/crepe.jpg" class="card-image" alt="Nutella Crepe">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Crepe</span>
-                    <p class="card-description">Delicate crepe filled with rich Nutella and fresh strawberries</p>
+                    <span class="card-category" data-key="dessert.crepe.category">Crepe</span>
+                    <p class="card-description" data-key="dessert.crepe.desc">Delicate crepe filled with rich Nutella and fresh strawberries</p>
                                         <p class="card-price" data-price="6000">6,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -68,8 +68,8 @@
                     <img src="../pictures/cakec.jpg" class="card-image" alt="Chocolate Lava Cake">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Cake</span>
-                    <p class="card-description">Warm chocolate cake with molten center, served with vanilla ice cream</p>
+                    <span class="card-category" data-key="dessert.lava.category">Cake</span>
+                    <p class="card-description" data-key="dessert.lava.desc">Warm chocolate cake with molten center, served with vanilla ice cream</p>
                                        <p class="card-price" data-price="6500">6,500 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -86,8 +86,8 @@
                     <img src="../pictures/donut.jpg" class="card-image" alt="Gourmet Donut">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Donut</span>
-                    <p class="card-description">Artisanal donut with Nutella filling and crushed hazelnuts</p>
+                    <span class="card-category" data-key="dessert.donut.category">Donut</span>
+                    <p class="card-description" data-key="dessert.donut.desc">Artisanal donut with Nutella filling and crushed hazelnuts</p>
                                   <p class="card-price" data-price="5000">5,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -104,8 +104,8 @@
                     <img src="../pictures/teramisu.jpg" class="card-image" alt="Tiramisu">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Classic</span>
-                    <p class="card-description">Traditional Italian dessert with layers of coffee-soaked ladyfingers</p>
+                    <span class="card-category" data-key="dessert.tiramisu.category">Classic</span>
+                    <p class="card-description" data-key="dessert.tiramisu.desc">Traditional Italian dessert with layers of coffee-soaked ladyfingers</p>
                                  <p class="card-price" data-price="4500">4,500 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -122,8 +122,8 @@
                     <img src="../pictures/redcake.webp" class="card-image" alt="Red Velvet Cake">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Cake</span>
-                    <p class="card-description">Moist red velvet layers with cream cheese frosting</p>
+                    <span class="card-category" data-key="dessert.redvelvet.category">Cake</span>
+                    <p class="card-description" data-key="dessert.redvelvet.desc">Moist red velvet layers with cream cheese frosting</p>
                                <p class="card-price" data-price="7500">7,500 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -140,8 +140,8 @@
                     <img src="../pictures/mac.jpg" class="card-image" alt="Macarons">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">French</span>
-                    <p class="card-description">Assortment of delicate French macarons in various flavors</p>
+                    <span class="card-category" data-key="dessert.macarons.category">French</span>
+                    <p class="card-description" data-key="dessert.macarons.desc">Assortment of delicate French macarons in various flavors</p>
                                    <p class="card-price" data-price="4500">4,500 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -158,8 +158,8 @@
                     <img src="../pictures/chess.jpg" class="card-image" alt="Cheesecake">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Classic</span>
-                    <p class="card-description">New York style cheesecake with berry compote</p>
+                    <span class="card-category" data-key="dessert.cheesecake.category">Classic</span>
+                    <p class="card-description" data-key="dessert.cheesecake.desc">New York style cheesecake with berry compote</p>
                             <p class="card-price" data-price="9500">9,500 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -176,8 +176,8 @@
                     <img src="../pictures/ch.jpg" class="card-image" alt="Chocolate Fondue">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Shareable</span>
-                    <p class="card-description">Rich melted chocolate with fruit and pastry dippers</p>
+                    <span class="card-category" data-key="dessert.fondue.category">Shareable</span>
+                    <p class="card-description" data-key="dessert.fondue.desc">Rich melted chocolate with fruit and pastry dippers</p>
                            <p class="card-price" data-price="12000">12,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -195,8 +195,8 @@
                     <img src="../pictures/choc.jpg" class="card-image" alt="Chocolate Mousse">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Classic</span>
-                    <p class="card-description">Light and airy dark chocolate mousse with whipped cream</p>
+                    <span class="card-category" data-key="dessert.mousse.category">Classic</span>
+                    <p class="card-description" data-key="dessert.mousse.desc">Light and airy dark chocolate mousse with whipped cream</p>
                                     <p class="card-price" data-price="5000">5,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -214,8 +214,8 @@
                     <img src="../pictures/nut.jpg" class="card-image" alt="Nutella Pancakes">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Nutella</span>
-                    <p class="card-description">Fluffy pancakes drizzled with Nutella and fresh bananas</p>
+                    <span class="card-category" data-key="dessert.pancakes.category">Nutella</span>
+                    <p class="card-description" data-key="dessert.pancakes.desc">Fluffy pancakes drizzled with Nutella and fresh bananas</p>
                                      <p class="card-price" data-price="4000">4,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -232,8 +232,8 @@
                     <img src="../pictures/so.avif" class="card-image" alt="Chocolate Soufflé">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Chocolate Soufflé</span>
-                    <p class="card-description">Light chocolate soufflé with a molten center</p>
+                    <span class="card-category" data-key="dessert.souffle.category">Chocolate Soufflé</span>
+                    <p class="card-description" data-key="dessert.souffle.desc">Light chocolate soufflé with a molten center</p>
                                        <p class="card-price" data-price="5000">5,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -250,8 +250,8 @@
                     <img src="../pictures/belgian.jpeg" class="card-image" alt="Belgian Waffles">
                 </div>
                 <div class="card-content">
-                    <span class="card-category">Belgian Waffles </span>
-                    <p class="card-description">Crispy waffles with Nutella, strawberries and whipped cream</p>
+                    <span class="card-category" data-key="dessert.waffles.category">Belgian Waffles </span>
+                    <p class="card-description" data-key="dessert.waffles.desc">Crispy waffles with Nutella, strawberries and whipped cream</p>
                                    <p class="card-price" data-price="6000">6,000 IQD</p>
                     <div class="quantity-selector">
                         <button class="quantity-btn minus">-</button>
@@ -264,8 +264,8 @@
     <!-- Second Hero Section -->
     <section class="hero2">
         <div class="hero2-content">
-            <h1>Artisanal Sweet Creations</h1>
-            <p>Each dessert is carefully prepared with premium ingredients and passion</p>
+            <h1 data-key="sweet.hero2.title">Artisanal Sweet Creations</h1>
+            <p data-key="sweet.hero2.subtitle">Each dessert is carefully prepared with premium ingredients and passion</p>
         </div>
     </section>
 
@@ -273,9 +273,13 @@
 <section class="dessert-types">
     <div class="dessert-container">
         <div class="dessert-text">
-            <h2>Our Sweet Commitment</h2>
-            <p>We passionately select the finest ingredients from around the world to create our signature desserts. Every recipe is crafted to celebrate authentic flavors while adding creative modern twists. From our classic French pastries to innovative sweet creations, each dessert delivers pure indulgence.</p>
-            <p>Our pastry chefs train relentlessly to perfect techniques and presentation, ensuring every sweet treat meets our standards of excellence in taste, texture and visual appeal. We believe desserts should be both beautiful and delicious.</p>
+            <h2 data-key="sweet.commitment.title">Our Sweet Commitment</h2>
+            <p data-key="sweet.commitment.para1">
+                We passionately select the finest ingredients from around the world to create our signature desserts. Every recipe is crafted to celebrate authentic flavors while adding creative modern twists. From our classic French pastries to innovative sweet creations, each dessert delivers pure indulgence.
+            </p>
+            <p data-key="sweet.commitment.para2">
+                Our pastry chefs train relentlessly to perfect techniques and presentation, ensuring every sweet treat meets our standards of excellence in taste, texture and visual appeal. We believe desserts should be both beautiful and delicious.
+            </p>
         </div>
     </div>
 </section>
@@ -283,19 +287,19 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-hours">
-                <h3>Opening Hours</h3>
-                <p>Monday - Friday: 8am - 10pm</p>
-                <p>Saturday - Sunday: 9am - 11pm</p>
+                <h3 data-key="sweet.footer.hours">Opening Hours</h3>
+                <p data-key="sweet.footer.weekdays">Monday - Friday: 8am - 10pm</p>
+                <p data-key="sweet.footer.weekend">Saturday - Sunday: 9am - 11pm</p>
             </div>
             <div class="footer-contact">
-                <h3>Visit Us</h3>
-                <p>123 Sweet Street</p>
-                <p>Dessert Valley, DV 12345</p>
-                <p>(123) 456-7890</p>
+                <h3 data-key="sweet.footer.visit">Visit Us</h3>
+                <p data-key="sweet.footer.address">123 Sweet Street</p>
+                <p data-key="sweet.footer.city">Dessert Valley, DV 12345</p>
+                <p data-key="sweet.footer.phone">(123) 456-7890</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2023 Sweet Delights. All rights reserved.</p>
+            <p data-key="sweet.footer.copyright">&copy; 2023 Sweet Delights. All rights reserved.</p>
         </div>
     </footer>
 </body>
