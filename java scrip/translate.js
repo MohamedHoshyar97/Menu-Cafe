@@ -282,26 +282,16 @@ const translations = {
         "sweet.commitment.title": "پەیمانی شیرینییەکانمان",
         "sweet.commitment.para1": "باشترین پێکھاتەکان لە سەرانسەری جیھان ھەڵدەبژێرین بۆ دروستکردنی شیرینی تایبەتەکانمان. ھەر رەچەتەیەک بۆ خۆشکردنی تامی رەسەن دروست دەکرێت لەگەڵ تێکەڵکردنی بیرۆکەی نوێ.",
         "sweet.commitment.para2": "چێشتلێنەرەکانمان بەردەوام ڕاهێنان دەکەن بۆ باشترکردنی تەکنیک و پیشاندان، دڵنیابوونەوە لەوەی کە ھەر شیرینییەک پێوەرە بەرزەکانی ئێمە بۆ تام و شێواز پێشکەش دەکات.",
-        
-        "sweet.footer.hours": "کاتەکانی کراوەبوون",
-        "sweet.footer.weekdays": "دووشەممە - ھەینی: ٨ی بەیانی - ١٠ی ئێوارە",
-        "sweet.footer.weekend": "شەممە - یەکشەممە: ٩ی بەیانی - ١١ی ئێوارە",
+
+         "about.imageAlt": "کافێکەمان",
+        "footer.hours": "کاتەکانی کراوەبوون",
+       "sweet.footer.weekdays": "دووشەممە - ھەینی: ٧ی بەیانی - ٧ی ئێوارە",
+        "sweet.footer.weekend": "شەممە - یەکشەممە: ٨ی بەیانی - ٦ی ئێوارە",
         "sweet.footer.visit": "سەردانمان بکە",
-        "sweet.footer.address": "١٢٣ شەقامی شیرینی",
-        "sweet.footer.city": "شاری شیرینی، DV 12345",
-        "sweet.footer.phone": "(١٢٣) ٤٥٦-٧٨٩٠",
-        "sweet.footer.copyright": "&copy; ٢٠٢٣ شیرینی خۆشەویستەکان. ھەموو مافەکان پارێزراون.",
-    
-        
-        // Footer
-        "footer.hours": "کاتەکانی کردنەوە",
-        "footer.weekdays": "دوو شەممە - هەینی: 10ی بەیانی - 10ی ئێوارە",
-        "footer.weekend": "شەممە - یەک شەممە: 11ی بەیانی - 11ی ئێوارە",
-        "footer.visit": "سەردانمان بکە",
-        "footer.address": "123 شەقامی شەیک",
-        "footer.city": "شارەوانی شەیک",
-        "footer.phone": "(123) 456-7890",
-        "footer.copyright2": "© 2023 شەیک ئیت ئەپ. هەموو مافەکان پارێزراون."
+          "sweet.footer.address": "١٢٣ شەقامی قاوە",
+         "sweet.footer.city": "بروڤیل، BV 12345",
+        "sweet.footer.phone":  "(١٢٣) ٤٥٦-٧٨٩٠",
+         "sweet.footer.copyright": "&copy; ٢٠٢٣ برو و بایتس. ھەموو مافەکان پارێزراون.",
     },
     ar: {
 
@@ -605,15 +595,16 @@ const translations = {
         "sweet.footer.phone": "(123) 456-7890",
         "sweet.footer.copyright": "&copy; 2023 متع حلوة. جميع الحقوق محفوظة.",
     
-        // Footer
+        "about.imageAlt": "مقهانا",
         "footer.hours": "ساعات العمل",
-        "footer.weekdays": "الإثنين - الجمعة: 10 صباحًا - 10 مساءً",
-        "footer.weekend": "السبت - الأحد: 11 صباحًا - 11 مساءً",
-        "footer.visit": "زورونا",
-        "footer.address": "123 شارع الميلك شيك",
-        "footer.city": "مدينة الميلك شيك",
-        "footer.phone": "(123) 456-7890",
-        "footer.copyright2": "© 2023 شيك إت أب. جميع الحقوق محفوظة."
+           "sweet.footer.weekdays": "الإثنين - الجمعة: ٧ صباحًا - ٧ مساءً",
+         "sweet.footer.weekend":  "السبت - الأحد: ٨ صباحًا - ٦ مساءً",
+         "sweet.footer.visit": "قم بزيارتنا",
+       "sweet.footer.address": "123 شارع القهوة",
+        "sweet.footer.city": "بروفيل، BV 12345",
+        "sweet.footer.phone":"(123) ٤٥٦-٧٨٩",
+        "sweet.footer.copyright": "&copy; 2023 برو آند بايتس. جميع الحقوق محفوظة.",
+
 
     },
 
