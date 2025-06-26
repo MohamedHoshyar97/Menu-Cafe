@@ -602,7 +602,7 @@ const translations = {
          "sweet.footer.visit": "قم بزيارتنا",
        "sweet.footer.address": "123 شارع القهوة",
         "sweet.footer.city": "بروفيل، BV 12345",
-        "sweet.footer.phone":"(123) ٤٥٦-٧٨٩",
+         "footer.phone":"(123) ٤٥٦-٧٨٩",
         "sweet.footer.copyright": "&copy; 2023 برو آند بايتس. جميع الحقوق محفوظة.",
 
 
