@@ -594,17 +594,6 @@ const translations = {
         "sweet.footer.city": "وادي الحلويات، DV 12345",
         "sweet.footer.phone": "(123) 456-7890",
         "sweet.footer.copyright": "&copy; 2023 متع حلوة. جميع الحقوق محفوظة.",
-    
-        "about.imageAlt": "مقهانا",
-        "footer.hours": "ساعات العمل",
-           "sweet.footer.weekdays": "الإثنين - الجمعة: ٧ صباحًا - ٧ مساءً",
-         "sweet.footer.weekend":  "السبت - الأحد: ٨ صباحًا - ٦ مساءً",
-         "sweet.footer.visit": "قم بزيارتنا",
-       "sweet.footer.address": "123 شارع القهوة",
-        "sweet.footer.city": "بروفيل، BV 12345",
-         "footer.phone":"(123) ٤٥٦-٧٨٩",
-        "sweet.footer.copyright": "&copy; 2023 برو آند بايتس. جميع الحقوق محفوظة.",
-
 
     },
 
